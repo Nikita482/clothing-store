@@ -11,6 +11,10 @@ export default function Layout(){
 
     }
 
+    // 1 media по высоте 
+    // 2 GlamGarb меньше на мобильных устройствах
+    // 3 window закрыаетс при нажатии на любую из кнопак
+
     return(
         <>
             <div className={window ? styles.windowVisible : styles.windowNotVisible}>

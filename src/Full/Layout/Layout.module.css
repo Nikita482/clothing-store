@@ -216,11 +216,50 @@
     .windowNotVisible{
         right: -1px;
     }
+    .name{
+        font-size: 35px;
+    }
 }
 
 
 @media (max-width: 400px) {
     .windowNotVisible{
         width: 101%;
+    }
+    .name{
+        font-size: 30px;
+    }
+}
+
+
+@media (max-height: 700px) {
+    .chapter{
+        margin: 20px auto;
+        height: 60px;
+    }
+    .chapterBack{
+        margin-top: 40px;
+        height: 60px;
+    }
+}
+
+
+@media (max-height: 600px) {
+    .chapter{
+        margin: 10px auto;
+    }
+    .chapterBack{
+        margin-top: 20px;
+    }
+}
+
+
+@media (max-height: 530px) {
+    .chapter{
+        height: 50px;
+
+    }
+    .chapterBack{
+        height: 50px;
     }
 }
