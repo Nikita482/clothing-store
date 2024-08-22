@@ -5,7 +5,10 @@
     background-color: black;
     border-bottom-left-radius: 30px;
     border-bottom-right-radius: 30px;
-    position: relative;
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 
@@ -35,7 +38,6 @@
     color: black;
     border-radius: 10px;
     font-size: 35px;
-
 }
 
 
@@ -93,20 +95,20 @@
     background-size: cover;
 }
 .vk{
-    background-image: url("/src/assets/vk.jpg");
+    background-image: url("/src/assets/header/vk.jpg");
 }
 .inst{
-    background-image: url("/src/assets/inst.jpg");
+    background-image: url("/src/assets/header/inst.jpg");
     background-size: 160%;
     background-position: center;
 }
 .tg{
-    background-image: url("/src/assets/tg.jpg");
+    background-image: url("/src/assets/header/tg.jpg");
     background-size: 200%;
     background-position: center;
 }
 .youTube{
-    background-image: url("/src/assets/youTube.jpg");
+    background-image: url("/src/assets/header/youTube.jpg");
     background-size: 200%;
     background-position: center;
 }
@@ -182,6 +184,10 @@
 
 
 
+
+
+
+
 @media (max-width: 1400px) {
     .leftBox{
         width: 75%;
@@ -228,6 +234,10 @@
     }
     .name{
         font-size: 30px;
+    }
+    .btnMenu{
+        width: 45px;
+        height: 45px;
     }
 }
 

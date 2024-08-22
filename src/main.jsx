@@ -5,14 +5,14 @@ import './index.css'
 import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom'
 
 import Full from './Full/Full.jsx'
-// import Page1 from './pages/page1.jsx'
+import Product from './Full/product/product.jsx'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     <Router basename='/clothing-store'>
       <Routes>
         <Route path='/' element={<Full />} />
-        {/* <Route path='/Page1' element={<Page1 />} /> */}
+        <Route path='/Product' element={<Product />} />
       </Routes>
     </Router>
   </StrictMode>,

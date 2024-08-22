@@ -2,6 +2,7 @@ import styles from "./Layout.module.css"
 
 import { useState } from "react"
 
+import MainMan from "./mainMan/mainMan"
 
 export default function Layout(){
     
@@ -11,28 +12,11 @@ export default function Layout(){
 
     }
 
-    // 1 media по высоте 
-    // 2 GlamGarb меньше на мобильных устройствах
-    // 3 window закрыаетс при нажатии на любую из кнопак
+    // 1 window закрыаетс при нажатии на любую из кнопак
 
     return(
         <>
-            <div className={window ? styles.windowVisible : styles.windowNotVisible}>
-                <div className={styles.socials}>
-                    <div className={styles.vk}></div>
-                    <div className={styles.inst}></div>
-                    <div className={styles.tg}></div>
-                    <div className={styles.youTube}></div>
-                </div>
 
-                <div className={styles.btnBox}>
-                    <button className={styles.chapter}> Мужская одежда</button>
-                    <button className={styles.chapter}>Женская одежда</button>
-                    <button className={styles.chapter}>Помощь</button>
-                    <button className={styles.chapter}>Связь с нами</button>
-                    <button onClick={menu} className={styles.chapterBack}>Закрыть</button>
-                </div>
-            </div>
 
 
             <div className={styles.wrapper}>
@@ -60,7 +44,24 @@ export default function Layout(){
                 </div>
             </div>
 
+            <div className={window ? styles.windowVisible : styles.windowNotVisible}>
+                <div className={styles.socials}>
+                    <div className={styles.vk}></div>
+                    <div className={styles.inst}></div>
+                    <div className={styles.tg}></div>
+                    <div className={styles.youTube}></div>
+                </div>
 
+                <div className={styles.btnBox}>
+                    <button className={styles.chapter}> Мужская одежда</button>
+                    <button className={styles.chapter}>Женская одежда</button>
+                    <button className={styles.chapter}>Помощь</button>
+                    <button className={styles.chapter}>Связь с нами</button>
+                    <button onClick={menu} className={styles.chapterBack}>Закрыть</button>
+                </div>
+            </div>
+
+            <MainMan/>
         </>
     )
 }
