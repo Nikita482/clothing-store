@@ -5,6 +5,7 @@
 
 
 body{
+  height: 10000000px;
   background-image: url("../src/assets/fon.jpg");
   background-size: cover;
   background-attachment: fixed;
