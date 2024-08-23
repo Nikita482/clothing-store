@@ -31,6 +31,14 @@ export default function MainMan(){
                     </Link>
                 </div>
             </div>
+
+            <div className={styles.wrapperMobule}>
+                <Link to="/Product" className={styles.MobuleChapter1}></Link>
+                <Link to="/Product" className={styles.MobuleChapter2}></Link>
+                <Link to="/Product" className={styles.MobuleChapter3}></Link>
+                <Link to="/Product" className={styles.MobuleChapter4}></Link>
+                <Link to="/Product" className={styles.MobuleChapter5}></Link>
+            </div>
         </>
     )
 }

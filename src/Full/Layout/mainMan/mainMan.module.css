@@ -33,7 +33,6 @@
 .chapter1, .chapter2, .chapter3, .chapter4, .chapter5{
     background-size: cover;
     border: 3px solid transparent;
-
 }
 .chapter1{
     background-image: url("/src/assets/mainMan/ t-shirt .jpg");
@@ -63,10 +62,54 @@
 }
 
 
+.wrapperMobule{
+    width: 90%;
+    height: auto;
+    margin: 180px auto 0 auto;
+    display: flex;
+    overflow-x: auto; /* Добавляем горизонтальный скролл */
+    -webkit-overflow-scrolling: touch; /* Плавный скроллинг на iOS */
+    scroll-snap-type: x mandatory; /* Активируем скролл-снэпинг (опционально) */
+}
+
+.MobuleChapter1, .MobuleChapter2, .MobuleChapter3, .MobuleChapter4, .MobuleChapter5{
+    width: 70%;
+    aspect-ratio: 1 / 1;
+    flex: 0 0 auto;
+    margin-right: 20px;
+    background-size: cover;
+    scroll-snap-align: start; /* Позиционирование при скроллинге (опционально) */
+    border-radius: 30px;
+}
+
+
+.MobuleChapter1{
+    background-image: url("/src/assets/mainMan/ t-shirt .jpg");
+}
+.MobuleChapter2{
+    background-image: url("/src/assets/mainMan/hoodie.jpg");
+}
+.MobuleChapter3{
+    background-image: url("/src/assets/mainMan/jeans.jpg");
+    background-position-y: -50px;
+}
+.MobuleChapter4{
+    background-image: url("/src/assets/mainMan/jacket.jpg");
+    background-position-y: -50px;
+}
+.MobuleChapter5{
+    background-image: url("/src/assets/mainMan/Accessory.jpg");
+    background-position-y: -100px;
+}
+
+
 
 
 @media (max-width: 1100px) {
     .wrapper{
+        margin: 120px auto 0 auto;
+    }
+    .wrapperMobule{
         margin: 120px auto 0 auto;
     }
 
@@ -77,16 +120,18 @@
 
 
 @media (max-width: 768px) {
-    .fotoTop{
-        flex-direction: column;
-        justify-content: space-between;  
+    .wrapper{
+        display: none;
     }
-    .chapter1, .chapter2{
-        width: 100%;
-        aspect-ratio: 1 / 1; 
-        border-radius: 30px;
+
+}
+
+
+@media (max-width: 500px) {
+    .wrapperMobule{
+        margin: 110px auto 0 auto;
     }
-    .chapter2{
-        margin-top: 30px;
+    .MobuleChapter5{
+        background-position-y: -50px;
     }
 }

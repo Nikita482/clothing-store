@@ -227,6 +227,17 @@
 }
 
 
+@media (max-width: 768px) {
+    .wrapper{
+        width: 100%;
+    }
+    .windowNotVisible{
+        width: 85%;
+    }
+
+}
+
+
 @media (max-width: 500px) {
     .windowNotVisible{
         right: -1px;
@@ -238,9 +249,6 @@
 
 
 @media (max-width: 400px) {
-    .windowNotVisible{
-        width: 101%;
-    }
     .name{
         font-size: 30px;
     }
