@@ -3,14 +3,19 @@ import styles from "./Layout.module.css"
 import { useState } from "react"
 
 import MainMan from "./mainMan/mainMan"
+// import MainWom from "./mainWom/mainWom"
 
 export default function Layout(){
     
     const[window, setWindow] = useState(true)
     const menu = () =>{
         setWindow(!window)
-
     }
+
+
+
+
+
 
     // 1 window закрыаетс при нажатии на любую из кнопак
 
@@ -61,9 +66,8 @@ export default function Layout(){
                 </div>
             </div>
 
-            {/* <div className={styles.mainMan}> */}
-                <MainMan/>
-            {/* </div> */}
+            <MainMan/>
+            {/* <MainWom /> */}
         </>
     )
 }

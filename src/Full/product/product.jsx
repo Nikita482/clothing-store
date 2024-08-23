@@ -1,32 +1,24 @@
-import React from 'react';
-import styles from './product.module.css';
+import React, { useState, useEffect } from 'react';
+import styles from './product.module.css'; // Подключаем стили
 
-const HorizontalScroll = () => {
+const ScrollTracker = () => {
+  useEffect(() => {
+    const handleScroll = () => {
+      console.log(`Прокрутка: ${window.scrollY}px`); // Выводим позицию прокрутки в консоль
+    };
+
+    window.addEventListener('scroll', handleScroll); // Добавляем обработчик события прокрутки
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll); // Удаляем обработчик при размонтировании
+    };
+  }, []);
+
   return (
-    <div className={styles.horizontalScroll}>
-      <div className={styles.item}>Item 1</div>
-      <div className={styles.item}>Item 2</div>
-      <div className={styles.item}>Item 3</div>
-      <div className={styles.item}>Item 4</div>
-      <div className={styles.item}>Item 5</div>
-      <div className={styles.item}>Item 6</div>
-      <div className={styles.item}>Item 7</div>
-      <div className={styles.item}>Item 8</div>
-      <div className={styles.item}>Item 9</div>
-      <div className={styles.item}>Item 10</div>
-      <div className={styles.item}>Item 11</div>
-      <div className={styles.item}>Item 12</div>
-      <div className={styles.item}>Item 13</div>
-      <div className={styles.item}>Item 14</div>
-      <div className={styles.item}>Item 15</div>
-      <div className={styles.item}>Item 16</div>
-      <div className={styles.item}>Item 17</div>
-      <div className={styles.item}>Item 18</div>
-      <div className={styles.item}>Item 19</div>
-      <div className={styles.item}>Item 20</div>
-      {/* Добавьте больше элементов по необходимости */}
+    <div className={styles.scrollTracker}>
+      {/* Элемент для применения стилей */}
     </div>
   );
 };
 
-export default HorizontalScroll;
+export default ScrollTracker;

@@ -1,19 +1,12 @@
-.horizontalScroll {
-    display: flex;                /* Элементы выстраиваются в ряд */
-    overflow-x: auto;             /* Добавляем горизонтальный скролл */
-    -webkit-overflow-scrolling: touch; /* Плавный скроллинг на iOS */
-    scroll-snap-type: x mandatory; /* Активируем скролл-снэпинг (опционально) */
+.scrollTracker {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 14px;
+    visibility: hidden; /* Не показываем текст на странице */
   }
-  
-  .item {
-    flex: 0 0 auto;               /* Отключаем автоматическое сжатие */
-    width: 200px;                 /* Устанавливаем ширину элементов */
-    height: 150px;                /* Высота элементов */
-    margin-right: 10px;           /* Расстояние между элементами */
-    background-color: lightcoral; /* Цвет для примера */
-    scroll-snap-align: start;     /* Позиционирование при скроллинге (опционально) */
-  }
-  
-
-
   

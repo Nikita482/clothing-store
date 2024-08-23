@@ -33,9 +33,18 @@
 .chapter1, .chapter2, .chapter3, .chapter4, .chapter5{
     background-size: cover;
     border: 3px solid transparent;
+    text-decoration: none;
+    position: relative;
+}
+.text, .text1, .text2, .text3{
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+    font-size: 25px;
+    color: white;
 }
 .chapter1{
-    background-image: url("/src/assets/mainMan/ t-shirt .jpg");
+    background-image: url("/src/assets/mainMan/t-shirt.jpg");
     border-top-left-radius: 30px;
 }
 .chapter2{
@@ -66,7 +75,7 @@
     width: 90%;
     height: auto;
     margin: 180px auto 0 auto;
-    display: flex;
+    display: none;
     overflow-x: auto; /* Добавляем горизонтальный скролл */
     -webkit-overflow-scrolling: touch; /* Плавный скроллинг на iOS */
     scroll-snap-type: x mandatory; /* Активируем скролл-снэпинг (опционально) */
@@ -80,11 +89,17 @@
     background-size: cover;
     scroll-snap-align: start; /* Позиционирование при скроллинге (опционально) */
     border-radius: 30px;
+    position: relative;
 }
-
-
+.textMobule{
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+    font-size: 25px;
+    color: white;
+}
 .MobuleChapter1{
-    background-image: url("/src/assets/mainMan/ t-shirt .jpg");
+    background-image: url("/src/assets/mainMan/t-shirt.jpg");
 }
 .MobuleChapter2{
     background-image: url("/src/assets/mainMan/hoodie.jpg");
@@ -116,6 +131,11 @@
     .chapter1, .chapter2{
         width: 47%;
     }
+    .text1, .text2, .text3{
+        position: absolute;
+        right: 0px;
+        bottom: 0px;
+    }
 }
 
 
@@ -123,7 +143,14 @@
     .wrapper{
         display: none;
     }
-
+    .wrapperMobule{
+        display: flex;
+    }
+    .textMobule{
+        right: 15px;
+        bottom: 15px;
+        font-size: 20px;
+    }
 }
 
 
