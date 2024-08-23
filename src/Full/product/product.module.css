@@ -1,8 +1,8 @@
 .horizontalScroll {
     display: flex;                /* Элементы выстраиваются в ряд */
     overflow-x: auto;             /* Добавляем горизонтальный скролл */
-    scroll-snap-type: x mandatory; /* Активируем скролл-снэпинг */
     -webkit-overflow-scrolling: touch; /* Плавный скроллинг на iOS */
+    scroll-snap-type: x mandatory; /* Активируем скролл-снэпинг (опционально) */
   }
   
   .item {
@@ -11,6 +11,6 @@
     height: 150px;                /* Высота элементов */
     margin-right: 10px;           /* Расстояние между элементами */
     background-color: lightcoral; /* Цвет для примера */
-    scroll-snap-align: start;     /* Позиционирование при скроллинге */
+    scroll-snap-align: start;     /* Позиционирование при скроллинге (опционально) */
   }
   
