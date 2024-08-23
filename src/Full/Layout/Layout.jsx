@@ -61,7 +61,9 @@ export default function Layout(){
                 </div>
             </div>
 
-            <MainMan/>
+            {/* <div className={styles.mainMan}> */}
+                <MainMan/>
+            {/* </div> */}
         </>
     )
 }

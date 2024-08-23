@@ -8,27 +8,27 @@ export default function MainMan(){
         <>
             <div className={styles.wrapper}>
                 <div className={styles.fotoTop}>
-                    <div className={styles.chapter1}>
+                    <Link to="/Product" className={styles.chapter1}>
 
-                    </div>
+                    </Link>
 
-                    <div className={styles.chapter2}>
+                    <Link to="/Product" className={styles.chapter2}>
 
-                    </div>
+                    </Link>
                 </div>
 
                 <div className={styles.fotoBottom}>
-                    <div className={styles.chapter3}>
+                    <Link to="/Product" className={styles.chapter3}>
 
-                    </div>
+                    </Link>
 
-                    <div className={styles.chapter4}>
+                    <Link to="/Product" className={styles.chapter4}>
 
-                    </div>
+                    </Link>
 
-                    <div className={styles.chapter5}>
+                    <Link to="/Product" className={styles.chapter5}>
 
-                    </div>
+                    </Link>
                 </div>
             </div>
         </>

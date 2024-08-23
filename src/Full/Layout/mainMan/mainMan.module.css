@@ -12,7 +12,7 @@
     justify-content: space-between;  
 }
 .chapter1, .chapter2{
-    width: 49%;
+    width: 48%;
     aspect-ratio: 1 / 1; 
 }
 
@@ -30,26 +30,63 @@
 }
 
 
-.chapter1{
-    background-image: url("https://i.pinimg.com/474x/0e/aa/50/0eaa50287a975a60a09a37441ef466a7.jpg");
+.chapter1, .chapter2, .chapter3, .chapter4, .chapter5{
     background-size: cover;
+    border: 3px solid transparent;
+
+}
+.chapter1{
+    background-image: url("/src/assets/mainMan/ t-shirt .jpg");
+    border-top-left-radius: 30px;
 }
 .chapter2{
-    background-image: url("https://i.pinimg.com/474x/60/82/45/6082459f22b2df0af368816969ce0d96.jpg");
-    background-size: cover;
+    background-image: url("/src/assets/mainMan/hoodie.jpg");
+    border-top-right-radius: 30px;
 }
 .chapter3{
-    background-image: url("https://i.pinimg.com/474x/21/fd/ee/21fdee83f786d824d918212ce18c2f85.jpg");
-    background-size: cover;
+    background-image: url("/src/assets/mainMan/jeans.jpg");
+    border-bottom-left-radius: 30px;
 }
 .chapter4{
-    background-image: url("https://i.pinimg.com/474x/49/38/d0/4938d0b3bbaca64ac923cced060e11aa.jpg");
-    background-size: cover;
+    background-image: url("/src/assets/mainMan/jacket.jpg");
 }
 .chapter5{
-    background-image: url("https://i.pinimg.com/474x/59/21/8c/59218ca8a6bd2585d01c975000b38e1b.jpg");
-    background-size: cover;
+    background-image: url("/src/assets/mainMan/Accessory.jpg");
+    border-bottom-right-radius: 30px;
+}
+.chapter1:hover,
+.chapter2:hover,
+.chapter3:hover,
+.chapter4:hover,
+.chapter5:hover{
+    border: 3px solid white;
 }
 
 
 
+
+@media (max-width: 1100px) {
+    .wrapper{
+        margin: 120px auto 0 auto;
+    }
+
+    .chapter1, .chapter2{
+        width: 47%;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .fotoTop{
+        flex-direction: column;
+        justify-content: space-between;  
+    }
+    .chapter1, .chapter2{
+        width: 100%;
+        aspect-ratio: 1 / 1; 
+        border-radius: 30px;
+    }
+    .chapter2{
+        margin-top: 30px;
+    }
+}
