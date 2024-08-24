@@ -5,6 +5,15 @@
 }
 
 
+.name{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    margin-bottom: 20px;
+}
 .nameMobule{
     width: 100%;
     height: 50px;
@@ -55,27 +64,33 @@
     color: white;
 }
 .chapter1{
-    background-image: url("/src/assets/mainMan/t-shirt.jpg");
+    background-image: url("https://i.pinimg.com/564x/19/90/9c/19909c7bcf73ac6049f5cf1c61558faf.jpg");
     border-top-left-radius: 30px;
-    background-position-y: 5px;
+    background-size: 105%;
+    background-position-x: -5px;
+    background-position-y: -5px;
 }
 .chapter2{
-    background-image: url("/src/assets/mainMan/hoodie.jpg");
+    background-image: url("https://i.pinimg.com/474x/78/79/5a/78795a7cb4aab4a09ddd397d5bc15133.jpg");
     border-top-right-radius: 30px;
+    background-size: 105%;
+    background-position-y: -5px;
 }
 .chapter3{
-    background-image: url("/src/assets/mainMan/jeans.jpg");
+    background-image: url("https://i.pinimg.com/564x/d2/3b/7f/d23b7f19b43d3b5e7c10ca7986460858.jpg");
     border-bottom-left-radius: 30px;
-    background-size: 102%;
-    background-position-y: -3px;
-    background-position-x: -3px;
+    background-size: 105%;
 }
 .chapter4{
-    background-image: url("/src/assets/mainMan/jacket.jpg");
+    background-image: url("https://i.pinimg.com/564x/10/2d/62/102d6298667c0ab5e59dfae50c5f5ae0.jpg");
+    background-position-y: -5px;
 }
 .chapter5{
-    background-image: url("/src/assets/mainMan/Accessory.jpg");
+    background-image: url("https://i.pinimg.com/736x/de/8e/f8/de8ef8cfb3c4773227c49fbd1fe1445c.jpg");
     border-bottom-right-radius: 30px;
+    background-size: 105%;
+    background-position-y: -50px;
+    background-position-x: 5px;
 }
 .chapter1:hover,
 .chapter2:hover,
@@ -140,7 +155,7 @@
         margin: 100px auto 0 auto;
     }
     .nameMobule{
-        margin-top: 100px;
+        margin-top: 650px;
     }
 
     .chapter1, .chapter2{
@@ -174,6 +189,33 @@
     }
 }
 
+@media (max-width: 720px) {
+    .nameMobule{
+        margin-top: 610px;
+    }
+}
+
+
+@media (max-width: 650px) {
+    .nameMobule{
+        margin-top: 580px;
+    }
+}
+
+
+@media (max-width: 600px) {
+    .nameMobule{
+        margin-top: 530px;
+    }
+}
+
+
+@media (max-width: 530px) {
+    .nameMobule{
+        margin-top: 490px;
+    }
+}
+
 
 @media (max-width: 500px) {
     .MobuleChapter5{
@@ -181,5 +223,40 @@
     }
     .nameMobule{
         font-size: 25px;
+    }
+}
+
+
+@media (max-width: 470px) {
+    .nameMobule{
+        margin-top: 450px;
+    }
+}
+
+
+@media (max-width: 400px) {
+    .nameMobule{
+        margin-top: 410px;
+    }
+}
+
+
+@media (max-width: 350px) {
+    .nameMobule{
+        margin-top: 380px;
+    }
+}
+
+
+@media (max-width: 300px) {
+    .nameMobule{
+        margin-top: 350px;
+    }
+}
+
+
+@media (max-width: 250px) {
+    .nameMobule{
+        margin-top: 320px;
     }
 }

@@ -3,7 +3,7 @@ import styles from "./Layout.module.css"
 import { useState } from "react"
 
 import MainMan from "./mainMan/mainMan"
-// import MainWom from "./mainWom/mainWom"
+import MainWom from "./mainWom/mainWom"
 
 export default function Layout(){
     
@@ -11,6 +11,30 @@ export default function Layout(){
     const menu = () =>{
         setWindow(!window)
     }
+
+    const[wom, setWom] = useState(true)
+    function MainWomBtn(){
+        if(wom === true){
+            setWom(!wom)
+        }
+    }
+    function MainManBtn(){
+        if(wom === false){
+            setWom(!wom)
+        }
+    }
+    // const colorManBlue = {
+    //     backgroundColor: '#2626b9'
+    // }
+    // const colorManGrey = {
+    //     backgroundColor: 'rgb(75, 75, 75)'
+    // }
+    // const colorWomPink = {
+    //     backgroundColor: '#FF69B4'
+    // }
+    // const colorWomGrey = {
+    //     backgroundColor: 'rgb(75, 75, 75)'
+    // }
 
 
 
@@ -28,14 +52,17 @@ export default function Layout(){
                 <div className={styles.box}>
                     <h1 className={styles.name}>GlamGarb</h1>
 
-                    <div onClick={menu} className={styles.btnMenu}>☰</div>
-                    
+                    <div className={styles.boxBtn}>
+                        <div onClick={MainWomBtn} className={styles.btnWom}></div>
+                        <div onClick={MainManBtn} className={styles.btnMan}></div>
+                        <div onClick={menu} className={styles.btnMenu}>☰</div>
+                    </div>
                 </div>
 
                 <div className={styles.menu}>
                     <div className={styles.leftBox}>
-                        <button className={styles.leftBtn}> Мужская одежда</button>
-                        <button className={styles.CenterBtn}>Женская одежда</button>
+                        <button onClick={MainManBtn} className={wom ? styles.leftBtnBlue : styles.leftBtn}>Мужская одежда</button>
+                        <button onClick={MainWomBtn} className={wom ? styles.CenterBtn : styles.CenterBtnPink}>Женская одежда</button>
                         <button className={styles.CenterBtn}>Помощь</button>
                         <button className={styles.CenterBtn}>Связь с нами</button>
                     </div>
@@ -58,7 +85,7 @@ export default function Layout(){
                 </div>
 
                 <div className={styles.btnBox}>
-                    <button className={styles.chapter}> Мужская одежда</button>
+                    <button className={styles.chapter}>Мужская одежда</button>
                     <button className={styles.chapter}>Женская одежда</button>
                     <button className={styles.chapter}>Помощь</button>
                     <button className={styles.chapter}>Связь с нами</button>
@@ -67,7 +94,10 @@ export default function Layout(){
             </div>
 
             <MainMan/>
-            {/* <MainWom /> */}
+
+            <div className={wom ? styles.departmentWomNotVis : styles.departmentWomVis}>
+                <MainWom/>
+            </div>
         </>
     )
 }

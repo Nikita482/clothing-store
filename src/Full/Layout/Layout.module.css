@@ -28,7 +28,9 @@
     font-size: 40px;
 }
 
-
+.boxBtn{
+    display: flex;
+}
 .btnMenu{
     width: 50px;
     height: 50px;
@@ -39,8 +41,26 @@
     color: black;
     border-radius: 10px;
     font-size: 35px;
+    margin-left: 10px;
 }
-
+.btnWom{
+    width: 50px;
+    height: 50px;
+    background-image: url("https://i.pinimg.com/474x/70/e9/6e/70e96e9521754ef1c32684dbf9d8f8cb.jpg");
+    background-size: cover;
+    border-radius: 10px;
+    margin-left: 10px;
+    display: none;
+}
+.btnMan{
+    width: 50px;
+    height: 50px;
+    background-image: url("https://i.pinimg.com/474x/8c/75/11/8c7511256dbbe9046c2a3dbcd9b7b387.jpg");
+    background-size: cover;
+    border-radius: 10px;
+    margin-left: 10px;
+    display: none;
+}
 
 
 .menu{
@@ -69,7 +89,7 @@
 }
 
 
-.leftBtn, .CenterBtn{
+.leftBtn, .CenterBtn, .leftBtnBlue, .CenterBtnPink{
     width: 25%;
     height: 100%;
     font-size: 20px;
@@ -77,6 +97,13 @@
     background-color: rgb(75, 75, 75);
     color: white;
     transition-duration: 0.3s;
+}
+.leftBtnBlue{
+    background-color: #2626b9;
+    border-bottom-left-radius: 30px;
+}
+.CenterBtnPink{
+    background-color: #FF69B4;
 }
 .leftBtn{
     border-bottom-left-radius: 30px;
@@ -188,6 +215,23 @@
 }
 
 
+.departmentWomNotVis{
+    width: 100%;
+    height: 100%;
+    /* background-color: yellow; */
+    position: absolute;
+    top: -200%;
+    transition-duration: 1s;
+}
+.departmentWomVis{
+    width: 100%;
+    height: 100%;
+    /* background-color: yellow; */
+    position: absolute;
+    transition-duration: 1s;
+    top: 0;
+}
+
 
 
 
@@ -224,6 +268,12 @@
         height: 100%;
         justify-content: space-between;
     }
+    .btnWom{
+        display: flex;
+    }
+    .btnMan{
+        display: flex;
+    }
 }
 
 
@@ -234,7 +284,12 @@
     .windowNotVisible{
         width: 85%;
     }
-
+    .btnWom{
+        display: none;
+    }
+    .btnMan{
+        display: none;
+    }
 }
 
 
@@ -244,17 +299,6 @@
     }
     .name{
         font-size: 35px;
-    }
-}
-
-
-@media (max-width: 400px) {
-    .name{
-        font-size: 30px;
-    }
-    .btnMenu{
-        width: 45px;
-        height: 45px;
     }
 }
 
@@ -290,3 +334,17 @@
         height: 50px;
     }
 }
+
+
+@media (max-width: 400px) {
+    .name{
+        font-size: 30px;
+    }
+    .btnMenu{
+        width: 45px;
+        height: 45px;
+    }
+}
+
+
+

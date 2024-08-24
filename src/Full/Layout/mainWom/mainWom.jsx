@@ -1,9 +1,9 @@
-import styles from "./mainMan.module.css"
+import styles from "./mainWom.module.css"
 
 import { Link } from "react-router-dom"
 
 
-export default function MainMan(){
+export default function MainWom(){
     return(
         <>
             <div className={styles.wrapper}>
@@ -19,7 +19,7 @@ export default function MainMan(){
                 </div>
             </div>
 
-            <h1 className={styles.nameMobule}>Мужской отдел</h1>
+            <h1 className={styles.nameMobule}>Женский отдел</h1>
             <div className={styles.wrapperMobule}>
                 <Link to="/Product" className={styles.MobuleChapter1}><span className={styles.textMobule}>Футболки</span></Link>
                 <Link to="/Product" className={styles.MobuleChapter2}><span className={styles.textMobule}>Худи</span></Link>
