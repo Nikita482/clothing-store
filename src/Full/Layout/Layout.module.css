@@ -123,20 +123,20 @@
     background-size: cover;
 }
 .vk{
-    background-image: url("/src/assets/header/vk.jpg");
+    background-image: url("/src/assets/socials/vk.jpg");
 }
 .inst{
-    background-image: url("/src/assets/header/inst.jpg");
+    background-image: url("/src/assets/socials/inst.jpg");
     background-size: 160%;
     background-position: center;
 }
 .tg{
-    background-image: url("/src/assets/header/tg.jpg");
+    background-image: url("/src/assets/socials/tg.jpg");
     background-size: 200%;
     background-position: center;
 }
 .youTube{
-    background-image: url("/src/assets/header/youTube.jpg");
+    background-image: url("/src/assets/socials/youTube.jpg");
     background-size: 200%;
     background-position: center;
 }

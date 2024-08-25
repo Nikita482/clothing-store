@@ -1,77 +1,303 @@
 .wrapper{
     width: 90%;
-    height: 500px;
+    height: auto;
     margin: 30px auto 0 auto;
     background-color: black;
     border-top-left-radius: 30px;
     border-top-right-radius: 30px;
+    display: flex;
+    padding-bottom: 20px;
+}
+.wrapperBox{
+    width: 95%;
+    margin: 0 auto;
+    display: flex;
+}
+
+
+.department1{
+    width: 27%;
+}
+.department2{
+    width: 35%;
+}
+.department3, .department4{
+    width: 50%;
+}
+.department5{
+    display: none;
+}
+
+.linker{
+    width: 38%;
+    display: flex;
+}
+
+
+.name{ 
+    width: 100%;
+    height: 70px;
+    font-size: 25px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.depBox{
+    width: 100%;
+    height: auto;
+    font-size: 20px;
+    color: white;
+}
+.box{
+    margin-bottom: 5px;
+}
+
+
+.socials{
+    width: 100%;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.socialsBox{
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+}
+.Vk, .Inst, .Tg, .You{
+    min-width: 50px;
+    min-height: 50px;
+    border-radius: 50%;
+    border: 2px solid transparent;
+    transition-duration: 0.3s;
+    background-size: cover;
+}
+.Vk{
+    background-image: url("/src/assets/socials/vk.jpg");
+}
+.Inst{
+    background-image: url("/src/assets/socials/inst.jpg");
+    background-size: 160%;
+    background-position: center;
+}
+.Tg{
+    background-image: url("/src/assets/socials/tg.jpg");
+    background-size: 200%;
+    background-position: center;
+}
+.You{
+    background-image: url("/src/assets/socials/youTube.jpg");
+    background-size: 200%;
+    background-position: center;
+}
+.Vk:hover,
+.Inst:hover,
+.Tg:hover,
+.You:hover{
+    border: 2px solid white;
+}
+
+
+.btnInfo{
+    width: 100%;
+    height: 135px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.btn{
+    width: 200px;
+    height: 60px;
+    font-size: 20px;
+    border-radius: 30px;
+    color: white;
+    border: 2px solid transparent;
+    background-color: rgb(75, 75, 75);
+    transition-duration: 0.3s;
+}
+.btn:hover{
+    border: 2px solid white;
+}
+
+
+
+@media (max-width: 1450px) {
+    .department2{
+        display: none;
+    }
+    .department3{
+        width: 23%;
+    }
+    .department4{
+        width: 40%;
+    }
+    .department5{
+        display: block;
+        width: 37%;
+    }
+    .linker{
+        width: 73%;
+    }
+}
+
+
+@media (max-width: 1300px) {
+    .department1{
+        width: 35%;
+    }
+    .linker{
+        width: 65%;
+    }
+}
+
+
+@media (max-width: 1150px) {
+    .socials{
+        width: 100%;
+        height: 70px;
+        display: block;
+    }
+    .socialsBox{
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+        margin-top: 10px;
+    }
+    .btnInfo{
+        width: 100%;
+        height: 97px;
+        display: flex;
+        justify-content: center;
+        align-items: end;
+    }
+    .btn{
+        width: 170px;
+        height: 40px;
+    }
+}
+
+
+@media (max-width: 1050px) {
+    .department1{
+        width: 40%;
+    }
+    .department3{
+        display: none;
+    }
+    .department4{
+        width: 60%;
+    }
+    .department5{
+        width: 40%;
+    }
+    .linker{
+        width: 60%;
+    }
+}
+
+
+@media (max-width: 900px) {
+    .department1{
+        width: 45%;
+    }
+    .department4{
+        width: 60%;
+    }
+    .department5{
+        width: 40%;
+    }
+    .linker{
+        width: 55%;
+    }
+    .btn{
+        width: 170px;
+        height: 40px;
+    }
+}
+
+
+@media (max-width: 840px) {
+    .department1{
+        width: 50%;
+    }
+    .department4{
+        display: none;
+    }
+    .department5{
+        width: 100%;
+    }
+    .linker{
+        width: 50%;
+    }
+    .socials{
+        display: flex;
+    }
+    .socialsBox{
+        justify-content: space-around;
+    }
+    .btn{
+        width: 230px;
+        height: 60px;
+    }
 }
 
 
 @media (max-width: 768px) {
-    .wrapper{
-        margin: 600px auto 0 auto;
-    }
-}
-
-
-@media (max-width: 720px) {
-    .wrapper{
-        margin: 550px auto 0 auto;
-    }
-}
-
-@media (max-width: 650px) {
-    .wrapper{
-        margin: 520px auto 0 auto;
-    }
+   .wrapper{
+        width: 100%;
+   }
 }
 
 
 @media (max-width: 600px) {
-    .wrapper{
-        margin: 470px auto 0 auto;
+    .department1{
+        display: none;
+    }
+    .linker{
+        width: 100%;
+    }
+    .socials{
+        display: flex;
+    }
+    .socialsBox{
+        justify-content: space-around;
+    }
+    .btnInfo{
+        width: 100%;
+        height: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: end;
+    }
+    .btn{
+        width: 230px;
+        height: 60px;
+        font-size: 20px;
+        border-radius: 30px;
     }
 }
 
 
-@media (max-width: 530px) {
-    .wrapper{
-        margin: 430px auto 0 auto;
+@media (max-width: 500px) {
+    .socials{
+        display: flex;
     }
-}
-
-
-@media (max-width: 470px) {
-    .wrapper{
-        margin: 390px auto 0 auto;
+    .socialsBox{
+        justify-content: space-around;
     }
-}
-
-
-@media (max-width: 400px) {
-    .wrapper{
-        margin: 350px auto 0 auto;
+    .btnInfo{
+        width: 100%;
+        height: 70px;
+        display: flex;
+        justify-content: center;
+        align-items: end;
     }
-}
-
-
-@media (max-width: 350px) {
-    .wrapper{
-        margin: 320px auto 0 auto;
-    }
-}
-
-
-@media (max-width: 300px) {
-    .wrapper{
-        margin: 290px auto 0 auto;
-    }
-}
-
-
-@media (max-width: 250px) {
-    .wrapper{
-        margin: 260px auto 0 auto;
+    .btn{
+        width: 200px;
+        height: 50px;
+        font-size: 20px;
+        border-radius: 30px;
     }
 }
