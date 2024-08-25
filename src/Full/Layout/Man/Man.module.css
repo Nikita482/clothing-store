@@ -1,0 +1,212 @@
+.wrapper{
+    width: 90%;
+    height: auto;
+    margin: 180px auto 0 auto;
+}
+
+
+.wrapperTop{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+}
+.department1, .department2{
+    width: 48.5%;
+    aspect-ratio: 1 / 1;
+    background-color: green;
+}
+
+
+.wrapperBottom{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+}
+.department3, .department4, .department5{
+    width: 30%;
+    aspect-ratio: 3 / 4;
+    margin-top: 30px;
+}
+
+
+.department1, .department2, .department3, .department4, .department5{
+    background-size: cover;
+    border: 3px solid transparent;
+    position: relative;
+}
+.text, .text1, .text2, .text3{
+    text-decoration: none;
+    font-size: 30px;
+    color: white;
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+}
+.text1, .text2, .text3{
+    bottom: 5px;
+    right: 5px;
+}
+.department1{
+    background-image: url("/src/assets/man/t-shirt.jpg");
+    border-top-left-radius: 30px;
+    background-position-y: 5px;
+}
+.department2{
+    background-image: url("/src/assets/man/hoodie.jpg");
+    border-top-right-radius: 30px;
+}
+.department3{
+    background-image: url("/src/assets/man/jeans.jpg");
+    border-bottom-left-radius: 30px;
+    background-size: 102%;
+    background-position-y: -3px;
+    background-position-x: -3px;
+}
+.department4{
+    background-image: url("/src/assets/man/jacket.jpg");
+}
+.department5{
+    background-image: url("/src/assets/man/Accessory.jpg");
+    border-bottom-right-radius: 30px;
+}
+.department1:hover,
+.department2:hover,
+.department3:hover,
+.department4:hover,
+.department5:hover{
+    border: 3px solid white;
+}
+
+
+
+
+.mobuleName{
+    width: 100%;
+    height: 50px;
+    color: white;
+    margin-top: 100px;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.mobuleWrapper{
+    width: 90%;
+    height: auto;
+    margin: 20px auto 0 auto;
+    display: none;
+    overflow-x: auto; /* Добавляем горизонтальный скролл */
+    -webkit-overflow-scrolling: touch; /* Плавный скроллинг на iOS */
+    scroll-snap-type: x mandatory; /* Активируем скролл-снэпинг (опционально) */
+}
+.MobuleDepartment1, .MobuleDepartment2, .MobuleDepartment3, .MobuleDepartment4, .MobuleDepartment5{
+    width: 70%;
+    aspect-ratio: 1 / 1;
+    flex: 0 0 auto;
+    margin-right: 20px;
+    background-size: cover;
+    scroll-snap-align: start; /* Позиционирование при скроллинге (опционально) */
+    border-radius: 30px;
+    position: relative;
+}
+.mobuleText{
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    font-size: 25px;
+    color: white;
+}
+.MobuleDepartment1{
+    background-image: url("/src/assets/man/t-shirt.jpg");
+}
+.MobuleDepartment2{
+    background-image: url("/src/assets/man/hoodie.jpg");
+}
+.MobuleDepartment3{
+    background-image: url("/src/assets/man/jeans.jpg");
+    background-position-y: -80px;
+}
+.MobuleDepartment4{
+    background-image: url("/src/assets/man/jacket.jpg");
+    background-position-y: -50px;
+}
+.MobuleDepartment5{
+    background-image: url("/src/assets/man/Accessory.jpg");
+    background-position-y: -100px;
+}
+
+
+
+
+
+
+@media (max-width: 1200px) {
+    .text, .text1, .text2, .text3{
+        font-size: 25px;
+    }
+}
+
+
+@media (max-width: 1100px) {
+    .wrapper{
+        margin: 120px auto 0 auto;
+    }
+}
+
+
+@media (max-width: 1000px) {
+    .text, .text1, .text2, .text3{
+        font-size: 22px;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .wrapper{
+        display: none;
+    }
+    .mobuleWrapper{
+        display: flex;
+    }
+    .mobuleName{
+        display: flex;
+    }
+}
+
+
+@media (max-width: 550px) {
+    .MobuleDepartment3{
+        background-position-y: -50px;
+    }
+    .MobuleDepartment5{
+        background-position-y: -70px;
+    }
+}
+
+
+@media (max-width: 400px) {
+    .MobuleDepartment5{
+        background-position-y: -50px;
+    }
+    .mobuleText{
+        font-size: 20px;
+    }
+    .mobuleName{
+        font-size: 25px;
+    }
+    .mobuleWrapper{
+        margin: 10px auto 0 auto;
+    }
+}
+
+
+@media (max-width: 300px) {
+    .MobuleDepartment3, .MobuleDepartment4{
+        background-position-y: -30px;
+    }
+    .MobuleDepartment5{
+        background-position-y: -40px;
+    }
+}

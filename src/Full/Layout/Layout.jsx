@@ -1,28 +1,57 @@
 import styles from "./Layout.module.css"
 
 import { useState } from "react"
+import { useEffect } from "react"
 
-import MainMan from "./mainMan/mainMan"
-import MainWom from "./mainWom/mainWom"
+// import MainMan from "./mainMan/mainMan"
+// import MainWom from "./mainWom/mainWom"
+import Man from "./Man/Man"
+import Wom from "./Wom/Wom"
 
 export default function Layout(){
     
-    const[window, setWindow] = useState(true)
+    const[popupWindow, setWindow] = useState(true)
     const menu = () =>{
-        setWindow(!window)
+        setWindow(!popupWindow)
     }
 
     const[wom, setWom] = useState(true)
-    function MainWomBtn(){
+    function womBtn(){
         if(wom === true){
             setWom(!wom)
         }
     }
-    function MainManBtn(){
+    function manBtn(){
         if(wom === false){
             setWom(!wom)
         }
     }
+
+    useEffect(() => {
+        const handleResize = () => {
+            if (window.innerWidth <= 768) {
+                if (!sessionStorage.getItem('reloaded')) {
+                    sessionStorage.setItem('reloaded', 'true');
+                    window.location.reload();
+                }
+            } else {
+                sessionStorage.removeItem('reloaded');
+            }
+        };
+        window.addEventListener("resize", handleResize);
+        // Выполняем проверку при первоначальной загрузке
+        handleResize();
+
+    }, []);
+
+
+
+
+
+
+
+
+
     // const colorManBlue = {
     //     backgroundColor: '#2626b9'
     // }
@@ -53,16 +82,16 @@ export default function Layout(){
                     <h1 className={styles.name}>GlamGarb</h1>
 
                     <div className={styles.boxBtn}>
-                        <div onClick={MainWomBtn} className={styles.btnWom}></div>
-                        <div onClick={MainManBtn} className={styles.btnMan}></div>
+                        <div onClick={womBtn} className={styles.btnWom}></div>
+                        <div onClick={manBtn} className={styles.btnMan}></div>
                         <div onClick={menu} className={styles.btnMenu}>☰</div>
                     </div>
                 </div>
 
                 <div className={styles.menu}>
                     <div className={styles.leftBox}>
-                        <button onClick={MainManBtn} className={wom ? styles.leftBtnBlue : styles.leftBtn}>Мужская одежда</button>
-                        <button onClick={MainWomBtn} className={wom ? styles.CenterBtn : styles.CenterBtnPink}>Женская одежда</button>
+                        <button onClick={manBtn} className={wom ? styles.leftBtnBlue : styles.leftBtn}>Мужская одежда</button>
+                        <button onClick={womBtn} className={wom ? styles.CenterBtn : styles.CenterBtnPink}>Женская одежда</button>
                         <button className={styles.CenterBtn}>Помощь</button>
                         <button className={styles.CenterBtn}>Связь с нами</button>
                     </div>
@@ -75,8 +104,8 @@ export default function Layout(){
                     </div>
                 </div>
             </div>
-
-            <div className={window ? styles.windowVisible : styles.windowNotVisible}>
+            
+            <div className={popupWindow ? styles.windowVisible : styles.windowNotVisible}>
                 <div className={styles.socials}>
                     <div className={styles.vk}></div>
                     <div className={styles.inst}></div>
@@ -93,10 +122,9 @@ export default function Layout(){
                 </div>
             </div>
 
-            <MainMan/>
-
+            <Man/>
             <div className={wom ? styles.departmentWomNotVis : styles.departmentWomVis}>
-                <MainWom/>
+                <Wom/>
             </div>
         </>
     )

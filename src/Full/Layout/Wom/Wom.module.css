@@ -1,0 +1,214 @@
+.wrapper{
+    width: 90%;
+    height: auto;
+    margin: 180px auto 0 auto;
+}
+
+
+.wrapperTop{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+}
+.department1, .department2{
+    width: 48.5%;
+    aspect-ratio: 1 / 1;
+    background-color: green;
+}
+
+
+.wrapperBottom{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+}
+.department3, .department4, .department5{
+    width: 30%;
+    aspect-ratio: 3 / 4;
+    background-color: green;
+    margin-top: 30px;
+}
+
+
+.department1, .department2, .department3, .department4, .department5{
+    background-size: cover;
+    border: 3px solid transparent;
+    position: relative;
+}
+.text{
+    text-decoration: none;
+    font-size: 30px;
+    color: white;
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+}
+.department1{
+    background-image: url("https://i.pinimg.com/564x/19/90/9c/19909c7bcf73ac6049f5cf1c61558faf.jpg");
+    border-top-left-radius: 30px;
+    background-size: 105%;
+    background-position-x: -5px;
+    background-position-y: -5px;
+}
+.department2{
+    background-image: url("https://i.pinimg.com/474x/78/79/5a/78795a7cb4aab4a09ddd397d5bc15133.jpg");
+    border-top-right-radius: 30px;
+    background-size: 105%;
+    background-position-y: -5px;
+}
+.department3{
+    background-image: url("https://i.pinimg.com/564x/d2/3b/7f/d23b7f19b43d3b5e7c10ca7986460858.jpg");
+    border-bottom-left-radius: 30px;
+    background-size: 105%;
+}
+.department4{
+    background-image: url("https://i.pinimg.com/564x/10/2d/62/102d6298667c0ab5e59dfae50c5f5ae0.jpg");
+    background-position-y: -5px;
+}
+.department5{
+    background-image: url("https://i.pinimg.com/736x/de/8e/f8/de8ef8cfb3c4773227c49fbd1fe1445c.jpg");
+    border-bottom-right-radius: 30px;
+    background-size: 105%;
+    background-position-y: -50px;
+    background-position-x: -5px;
+}
+.department1:hover,
+.department2:hover,
+.department3:hover,
+.department4:hover,
+.department5:hover{
+    border: 3px solid white;
+}
+
+
+
+.mobuleName{
+    width: 100%;
+    height: 50px;
+    color: white;
+    margin-top: 10px;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.mobuleWrapper{
+    width: 90%;
+    height: auto;
+    margin: 20px auto 0 auto;
+    display: none;
+    overflow-x: auto; /* Добавляем горизонтальный скролл */
+    -webkit-overflow-scrolling: touch; /* Плавный скроллинг на iOS */
+    scroll-snap-type: x mandatory; /* Активируем скролл-снэпинг (опционально) */
+}
+.MobuleDepartment1, .MobuleDepartment2, .MobuleDepartment3, .MobuleDepartment4, .MobuleDepartment5{
+    width: 70%;
+    aspect-ratio: 1 / 1;
+    flex: 0 0 auto;
+    margin-right: 20px;
+    background-size: cover;
+    scroll-snap-align: start; /* Позиционирование при скроллинге (опционально) */
+    border-radius: 30px;
+    position: relative;
+}
+.mobuleText{
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    font-size: 25px;
+    color: white;
+}
+.MobuleDepartment1{
+    background-image: url("/src/assets/wom/t-shirt .jpg");
+}
+.MobuleDepartment2{
+    background-image: url("/src/assets/wom/hoodie.jpg");
+}
+.MobuleDepartment3{
+    background-image: url("/src/assets/wom/jeans.jpg");
+    background-position-y: -50px;
+}
+.MobuleDepartment4{
+    background-image: url("/src/assets/wom/jacket.jpg");
+    background-position-y: -50px;
+}
+.MobuleDepartment5{
+    background-image: url("/src/assets/wom/accessory.jpg");
+    background-position-y: -100px;
+}
+
+
+
+
+
+@media (max-width: 1200px) {
+    .text{
+        font-size: 25px;
+    }
+}
+
+
+@media (max-width: 1100px) {
+    .wrapper{
+        margin: 120px auto 0 auto;
+    }
+}
+
+
+@media (max-width: 1000px) {
+    .text{
+        font-size: 22px;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .wrapper{
+        display: none;
+    }
+    .mobuleWrapper{
+        display: flex;
+    }
+    .mobuleName{
+        display: flex;
+    }
+}
+
+
+@media (max-width: 550px) {
+    .MobuleDepartment3{
+        background-position-y: -50px;
+    }
+    .MobuleDepartment5{
+        background-position-y: -70px;
+    }
+}
+
+
+@media (max-width: 400px) {
+    .MobuleDepartment5{
+        background-position-y: -50px;
+    }
+    .mobuleText{
+        font-size: 20px;
+    }
+    .mobuleName{
+        font-size: 25px;
+    }
+    .mobuleWrapper{
+        margin: 10px auto 0 auto;
+    }
+}
+
+
+@media (max-width: 300px) {
+    .MobuleDepartment3, .MobuleDepartment4{
+        background-position-y: -30px;
+    }
+    .MobuleDepartment5{
+        background-position-y: -40px;
+    }
+}
+
