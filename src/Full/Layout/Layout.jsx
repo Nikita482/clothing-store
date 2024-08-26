@@ -3,10 +3,9 @@ import styles from "./Layout.module.css"
 import { useState } from "react"
 import { useEffect } from "react"
 
-// import MainMan from "./mainMan/mainMan"
-// import MainWom from "./mainWom/mainWom"
 import Man from "./Man/Man"
 import Wom from "./Wom/Wom"
+import NewItem from "./NewItem/NewItem"
 
 export default function Layout(){
     
@@ -44,39 +43,10 @@ export default function Layout(){
 
     }, []);
 
-
-
-
-
-
-
-
-
-    // const colorManBlue = {
-    //     backgroundColor: '#2626b9'
-    // }
-    // const colorManGrey = {
-    //     backgroundColor: 'rgb(75, 75, 75)'
-    // }
-    // const colorWomPink = {
-    //     backgroundColor: '#FF69B4'
-    // }
-    // const colorWomGrey = {
-    //     backgroundColor: 'rgb(75, 75, 75)'
-    // }
-
-
-
-
-
-
     // 1 window закрыаетс при нажатии на любую из кнопак
 
     return(
         <>
-
-
-
             <div className={styles.wrapper}>
                 <div className={styles.box}>
                     <h1 className={styles.name}>GlamGarb</h1>
@@ -122,10 +92,16 @@ export default function Layout(){
                 </div>
             </div>
 
-            <Man/>
-            <div className={wom ? styles.departmentWomNotVis : styles.departmentWomVis}>
-                <Wom/>
+            <NewItem/>
+
+            <div className={styles.departments}>
+                <Man/>
+                <div className={wom ? styles.departmentWomNotVis : styles.departmentWomVis}>
+                    <Wom/>
+                </div>
             </div>
+
+
         </>
     )
 }

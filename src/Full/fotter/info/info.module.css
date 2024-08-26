@@ -199,11 +199,6 @@
 }
 
 
-@media (max-width: 270px) {
-    .name{
-        font-size: 18px;
-    }
-}
 
 
 @media (max-width: 250px) {
