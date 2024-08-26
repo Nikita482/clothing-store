@@ -204,3 +204,10 @@
         font-size: 18px;
     }
 }
+
+
+@media (max-width: 250px) {
+    .name{
+        font-size: 17px;
+    }
+}
