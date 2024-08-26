@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom"
 import styles from "./fotter.module.css"
 
 
@@ -57,7 +58,7 @@ export default function Fotter(){
                                     <div className={styles.Vk}></div>
                                     <div className={styles.Inst}></div>
                                 </div>
-                                
+
                                 <div className={styles.socialsBox}>
                                     <div className={styles.Tg}></div>
                                     <div className={styles.You}></div> 
@@ -65,7 +66,7 @@ export default function Fotter(){
                             </div>
 
                             <div className={styles.btnInfo}>
-                                <button className={styles.btn}>Узнать больше</button>
+                                <Link to="/Info" className={styles.btn}>Узнать больше</Link>
                             </div>
                         </div>
                     </div>
