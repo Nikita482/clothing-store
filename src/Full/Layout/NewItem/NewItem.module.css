@@ -29,8 +29,40 @@
     margin-right: 10px;
     flex: 0 0 auto;
     scroll-snap-align: start;
+    border-radius: 30px;
+    position: relative;
 }
-
+.text{
+    position: absolute;
+    bottom: 5px;
+    right: 15px;
+    font-size: 25px;
+    color: white;
+}
+.item1{
+    background-image: url("https://i.pinimg.com/474x/e7/c5/92/e7c59217781be4c3fb51d15b740cd909.jpg");
+    background-size: cover;
+    background-position-y: -10px;
+}
+.item2{
+    background-image: url("https://i.pinimg.com/474x/f4/83/d7/f483d707e19d819fa2e40747b9d3330d.jpg");
+    background-size: cover;
+}
+.item3{
+    background-image: url("https://i.pinimg.com/474x/8e/ec/64/8eec6466d3d32af842dac061d1d59a59.jpg");
+    background-size: cover;
+    background-position-y: -20px;
+}
+.item4{
+    background-image: url("https://i.pinimg.com/474x/c5/f6/b2/c5f6b2faa3430e06f2264ee4f411f09d.jpg");
+    background-size: cover;
+}
+.item5{
+    background-image: url("https://i.pinimg.com/736x/ab/7a/19/ab7a19a393fbc829b09f54a206d89f82.jpg");
+    background-size: cover;
+    background-size: 150%;
+    background-position: center;
+}
 
 
 
