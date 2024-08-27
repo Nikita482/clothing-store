@@ -1,24 +1,23 @@
-import React, { useState, useEffect } from 'react';
-import styles from './product.module.css'; // Подключаем стили
+import React, { useState } from 'react';
+import styles from './product.module.css'; // Импортируем стили
 
-const ScrollTracker = () => {
-  useEffect(() => {
-    const handleScroll = () => {
-      console.log(`Прокрутка: ${window.scrollY}px`); // Выводим позицию прокрутки в консоль
+function Product() {
+    const [isVisible, setIsVisible] = useState(true);
+
+    const toggleVisibility = () => {
+        setIsVisible(!isVisible);
     };
 
-    window.addEventListener('scroll', handleScroll); // Добавляем обработчик события прокрутки
+    return (
+        <div>
+            <button onClick={toggleVisibility}>
+                Toggle Block
+            </button>
+            <div className={`${styles.block} ${isVisible ? styles.visible : styles.hidden}`}>
+                This is a toggled block
+            </div>
+        </div>
+    );
+}
 
-    return () => {
-      window.removeEventListener('scroll', handleScroll); // Удаляем обработчик при размонтировании
-    };
-  }, []);
-
-  return (
-    <div className={styles.scrollTracker}>
-      {/* Элемент для применения стилей */}
-    </div>
-  );
-};
-
-export default ScrollTracker;
+export default Product;

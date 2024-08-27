@@ -5,7 +5,6 @@ import { useEffect } from "react"
 
 import Man from "./Man/Man"
 import Wom from "./Wom/Wom"
-import NewItem from "./NewItem/NewItem"
 
 export default function Layout(){
     
@@ -92,16 +91,12 @@ export default function Layout(){
                 </div>
             </div>
 
-            <NewItem/>
-
             <div className={styles.departments}>
                 <Man/>
                 <div className={wom ? styles.departmentWomNotVis : styles.departmentWomVis}>
                     <Wom/>
                 </div>
             </div>
-
-
         </>
     )
 }

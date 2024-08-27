@@ -25,7 +25,6 @@
 .item1, .item2, .item3, .item4, .item5{
     width: 300px;
     aspect-ratio: 3 / 4;
-    background-color: green;
     margin-right: 10px;
     flex: 0 0 auto;
     scroll-snap-align: start;

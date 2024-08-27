@@ -1,0 +1,139 @@
+.wrapper{
+    width: 90%;
+    height: auto;
+    margin: 30px auto 0 auto;
+}
+
+
+.name{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+
+.btns{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: space-around;
+}
+.manBlue, .manGrey, .womPink, .womGrey{
+    width: 40%;
+    height: 100%;
+    font-size: 20px;
+    color: white;
+    border: 0;
+    border-radius: 30px;
+    transition-duration: 0.5s;
+}
+.manBlue{
+    background-color: #2626B9;
+}
+.manGrey{
+    background-color: #4B4B4B;
+}
+.womPink{
+    background-color: #FF69B4;
+}
+.womGrey{
+    background-color: #4B4B4B;
+}
+
+
+.man{
+    width: 100%;
+    height: auto;
+    margin: 10px auto 0 auto;
+    display: flex;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    scroll-snap-type: x mandatory;
+}
+.wom{
+    width: 100%;
+    height: auto;
+    margin: 10px auto 0 auto;
+    display: flex;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    scroll-snap-type: x mandatory;
+}
+.text{
+    position: absolute;
+    bottom: 5px;
+    right: 15px;
+    font-size: 25px;
+    color: white;
+}
+
+
+.manDepart1, .manDepart2, .manDepart3, .manDepart4, .manDepart5, .manDepart6, .manDepart7, .womDepart1, .womDepart2, .womDepart3, .womDepart4, .womDepart5, .womDepart6, .womDepart7{
+    width: 300px;
+    aspect-ratio: 3 / 4;
+    background-color: yellow;
+    margin-right: 10px;
+    flex: 0 0 auto;
+    scroll-snap-align: start;
+    position: relative;
+    border-radius: 30px;
+}
+.manDepart1{
+    background-image: url("https://i.pinimg.com/474x/36/ce/64/36ce64cb1786b589dc805cbe498c8c32.jpg");
+    background-size: cover;
+}
+.manDepart2{
+    background-image: url("https://i.pinimg.com/474x/3b/cb/5b/3bcb5b632b2bc59ec7d50eccbb49f5c8.jpg");
+    background-size: cover;
+}
+.manDepart3{
+    background-image: url("https://i.pinimg.com/474x/a3/4e/72/a34e72c79b78c89aa9900694fa76e55d.jpg");
+    background-size: cover;
+}
+.manDepart4{
+    background-image: url("https://i.pinimg.com/474x/74/87/bd/7487bd889e739653fc1766e54f5644b3.jpg");
+    background-size: cover;
+}
+.manDepart5{
+    background-image: url("https://i.pinimg.com/474x/76/38/8b/76388bfa6e57fa864148d781e1d0dc35.jpg");
+    background-size: cover;
+}
+.manDepart6{
+    background-image: url("https://i.pinimg.com/474x/44/07/a1/4407a13457399c7f5f1d08cb4929ce14.jpg");
+    background-size: cover;
+}
+.manDepart7{
+    background-image: url("https://i.pinimg.com/474x/26/fd/e5/26fde5751cd120aed8e288673a17d1c8.jpg");
+    background-size: cover;
+}
+.womDepart1{
+    background-image: url("https://i.pinimg.com/474x/95/c9/20/95c9202a98c9a5d874507ee3dba836fc.jpg");
+    background-size: cover;
+}
+.womDepart2{
+    background-image: url("https://i.pinimg.com/474x/59/33/30/5933305d66ade5c3a7fff04a5b490840.jpg");
+    background-size: cover;
+}
+.womDepart3{
+    background-image: url("https://i.pinimg.com/474x/c1/86/cd/c186cd0c7cd8384d0dce52a8dc5ebcbd.jpg");
+    background-size: cover;
+}
+.womDepart4{
+    background-image: url("https://i.pinimg.com/474x/42/0c/54/420c5474203f704fa939282834d1ad8c.jpg");
+    background-size: cover;
+}
+.womDepart5{
+    background-image: url("https://i.pinimg.com/474x/cb/4d/c0/cb4dc0bbd54adbfc2a82d990247969ca.jpg");
+    background-size: cover;
+}
+.womDepart6{
+    background-image: url("https://i.pinimg.com/474x/89/c3/b3/89c3b31ea05b34be5f9295c479653cfc.jpg");
+    background-size: cover;
+}
+.womDepart7{
+    background-image: url("https://i.pinimg.com/474x/1b/9f/7a/1b9f7ac7263348f814d34d28ab7ecb4f.jpg");
+    background-size: cover;
+}
