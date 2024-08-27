@@ -44,7 +44,7 @@
 }
 
 
-.man{
+.manVis{
     width: 100%;
     height: auto;
     margin: 10px auto 0 auto;
@@ -52,8 +52,12 @@
     overflow-x: auto;
     -webkit-overflow-scrolling: touch;
     scroll-snap-type: x mandatory;
+    opacity: 1;              /* Блок становится полностью видимым */
+    transform: scale(1);     /* Блок возвращается к своему нормальному размеру */
+    transition: opacity 1s ease, transform 1s ease; /* Плавный переход */
+    position: relative;      /* Блок занимает своё обычное место */
 }
-.wom{
+.manNotVis{
     width: 100%;
     height: auto;
     margin: 10px auto 0 auto;
@@ -61,20 +65,49 @@
     overflow-x: auto;
     -webkit-overflow-scrolling: touch;
     scroll-snap-type: x mandatory;
+    opacity: 0;              /* Блок становится прозрачным */
+    transform: scale(0.7);  /* Блок немного уменьшается */
+    transition: opacity 1s ease, transform 1s ease; /* Плавный переход */
+    position: absolute;      /* Блок не занимает место в потоке */ 
+    pointer-events: none; /* Отключает взаимодействие с этим блоком */
 }
-.text{
-    position: absolute;
-    bottom: 5px;
-    right: 15px;
-    font-size: 25px;
-    color: white;
+
+
+.womVis{
+    width: 100%;
+    height: auto;
+    margin: 10px auto 0 auto;
+    display: flex;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    scroll-snap-type: x mandatory;
+
+    opacity: 1;              /* Блок становится полностью видимым */
+    transform: scale(1);     /* Блок возвращается к своему нормальному размеру */
+    transition: opacity 1s ease, transform 1s ease; /* Плавный переход */
+    position: relative;      /* Блок занимает своё обычное место */
+}
+.womNotVis{
+    width: 100%;
+    height: auto;
+    margin: 10px auto 0 auto;
+    display: flex;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    scroll-snap-type: x mandatory;
+
+    opacity: 0;              /* Блок становится прозрачным */
+    transform: scale(0);  /* Блок немного уменьшается */
+    transition: opacity 1s ease, transform 1s ease; /* Плавный переход */
+    position: absolute;      /* Блок не занимает место в потоке */ 
+    pointer-events: none; /* Отключает взаимодействие с этим блоком */
+    top: 0;
 }
 
 
 .manDepart1, .manDepart2, .manDepart3, .manDepart4, .manDepart5, .manDepart6, .manDepart7, .womDepart1, .womDepart2, .womDepart3, .womDepart4, .womDepart5, .womDepart6, .womDepart7{
     width: 300px;
     aspect-ratio: 3 / 4;
-    background-color: yellow;
     margin-right: 10px;
     flex: 0 0 auto;
     scroll-snap-align: start;
@@ -137,3 +170,78 @@
     background-image: url("https://i.pinimg.com/474x/1b/9f/7a/1b9f7ac7263348f814d34d28ab7ecb4f.jpg");
     background-size: cover;
 }
+
+
+
+
+
+@media (max-width: 1400px) {
+    .manDepart1, .manDepart2, .manDepart3, .manDepart4, .manDepart5, .manDepart6, .manDepart7, .womDepart1, .womDepart2, .womDepart3, .womDepart4, .womDepart5, .womDepart6, .womDepart7{
+        width: 330px;
+    }
+}
+
+
+@media (max-width: 1150px) {
+    .manDepart1, .manDepart2, .manDepart3, .manDepart4, .manDepart5, .manDepart6, .manDepart7, .womDepart1, .womDepart2, .womDepart3, .womDepart4, .womDepart5, .womDepart6, .womDepart7{
+        width: 300px;
+    }
+}
+
+
+@media (max-width: 1050px) {
+    .manDepart1, .manDepart2, .manDepart3, .manDepart4, .manDepart5, .manDepart6, .manDepart7, .womDepart1, .womDepart2, .womDepart3, .womDepart4, .womDepart5, .womDepart6, .womDepart7{
+        width: 350px;
+    }
+}
+
+
+@media (max-width: 830px) {
+    .manDepart1, .manDepart2, .manDepart3, .manDepart4, .manDepart5, .manDepart6, .manDepart7, .womDepart1, .womDepart2, .womDepart3, .womDepart4, .womDepart5, .womDepart6, .womDepart7{
+        width: 300px;
+    }
+}
+
+
+
+@media (max-width: 768px) {
+    .wrapper{
+        width: 100%;
+    }
+}
+
+
+@media (max-width: 650px) {
+    .manDepart1, .manDepart2, .manDepart3, .manDepart4, .manDepart5, .manDepart6, .manDepart7, .womDepart1, .womDepart2, .womDepart3, .womDepart4, .womDepart5, .womDepart6, .womDepart7{
+        width: 270px;
+    }
+}
+
+
+@media (max-width: 590px) {
+    .manDepart1, .manDepart2, .manDepart3, .manDepart4, .manDepart5, .manDepart6, .manDepart7, .womDepart1, .womDepart2, .womDepart3, .womDepart4, .womDepart5, .womDepart6, .womDepart7{
+        width: 350px;
+    }
+}
+
+
+@media (max-width: 380px) {
+    .manDepart1, .manDepart2, .manDepart3, .manDepart4, .manDepart5, .manDepart6, .manDepart7, .womDepart1, .womDepart2, .womDepart3, .womDepart4, .womDepart5, .womDepart6, .womDepart7{
+        width: 100%;
+    }
+}
+/* .btns{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: space-around;
+}
+.manBlue, .manGrey, .womPink, .womGrey{
+    width: 40%;
+    height: 100%;
+    font-size: 20px;
+    color: white;
+    border: 0;
+    border-radius: 30px;
+    transition-duration: 0.5s;
+} */

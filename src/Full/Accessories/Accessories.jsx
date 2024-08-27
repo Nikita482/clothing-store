@@ -37,7 +37,29 @@ export default function Accessories(){
                      <button onClick={womBtn} className={department ? styles.womGrey : styles.womPink}>Женские</button>
                 </div>
 
-                {department === true && (
+                <div className={department ? styles.manVis : styles.manNotVis}>
+                    <Link to="/Product" className={styles.manDepart1}></Link>
+                    <Link to="/Product" className={styles.manDepart2}></Link>
+                    <Link to="/Product" className={styles.manDepart3}></Link>
+                    <Link to="/Product" className={styles.manDepart4}></Link>
+                    <Link to="/Product" className={styles.manDepart5}></Link>
+                    <Link to="/Product" className={styles.manDepart6}></Link>
+                    <Link to="/Product" className={styles.manDepart7}></Link>
+                </div>
+
+                <div className={department ? styles.womNotVis : styles.womVis}>
+                    <Link to="/Product" className={styles.womDepart1}></Link>
+                    <Link to="/Product" className={styles.womDepart2}></Link>
+                    <Link to="/Product" className={styles.womDepart3}></Link>
+                    <Link to="/Product" className={styles.womDepart4}></Link>
+                    <Link to="/Product" className={styles.womDepart5}></Link>
+                    <Link to="/Product" className={styles.womDepart6}></Link>
+                    <Link to="/Product" className={styles.womDepart7}></Link>
+                </div>
+
+
+
+                {/* {department === true && (
                     <>
                         <div className={styles.man}>
                             <Link to="/Product" className={styles.manDepart1}><span className={styles.text}>Футболки</span></Link>
@@ -63,7 +85,7 @@ export default function Accessories(){
                             <Link to="/Product" className={styles.womDepart7}><span className={styles.text}>Кроссовки</span></Link>
                         </div>
                     </>
-                )}
+                )} */}
             </div>
         </>
     )

@@ -1,20 +1,48 @@
-/* product.module.css */
-.block {
-  width: 200px;
-  height: 200px;
-  background-color: blue;
-  transition: opacity 0.5s ease, transform 0.5s ease;
-  opacity: 1;
-  transform: scale(1);
+.box{
+  width: 90%;
+  height: auto;
+  display: flex;
+  margin: 50px auto;
+  position: relative;
 }
 
-.hidden {
+
+.test{
+  width: 500px;
+  height: 500px;
+  background-color: green;
+  position: absolute;
+  left: 100px;
+}
+
+
+.btn1, .btn2{
+  width: 100px;
+  height: 100px;
+  background-color: yellow;
+  font-size: 30px;
+  color: black;
+}
+.btn1{
+  margin-left: 300px;
+}
+
+
+.wrapper1{
+  width: 500px;
+  height: 500px;
+  background-color: red;
+  transition-duration: 1s;
+  position: absolute;
+  left: 100px;
+}
+
+
+.wrapper2{
+  width: 500px;
+  height: 500px;
+  transition-duration: 1s;
   opacity: 0;
-  transform: scale(0.95);
-  pointer-events: none;
-}
-
-.visible {
-  opacity: 1;
-  transform: scale(1);
+  position: absolute;
+  left: 100px;
 }

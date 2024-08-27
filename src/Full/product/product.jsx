@@ -1,23 +1,31 @@
-import React, { useState } from 'react';
-import styles from './product.module.css'; // Импортируем стили
+import styles from './product.module.css';
 
-function Product() {
-    const [isVisible, setIsVisible] = useState(true);
+import { useState } from 'react';
 
-    const toggleVisibility = () => {
-        setIsVisible(!isVisible);
-    };
 
-    return (
-        <div>
-            <button onClick={toggleVisibility}>
-                Toggle Block
-            </button>
-            <div className={`${styles.block} ${isVisible ? styles.visible : styles.hidden}`}>
-                This is a toggled block
-            </div>
+export default function Product(){
+
+  const[state, setState] = useState(true)
+  function click(){
+    setState(!state)
+  }
+
+
+
+
+  return(
+    <>
+      <div className={styles.box}>
+        <button onClick={click}>click</button>
+
+        <div className={styles.test}>
+          <button className={styles.btn1}>click1</button>
         </div>
-    );
-}
 
-export default Product;
+        <div className={state ? styles.wrapper1 : styles.wrapper2}>
+          <button className={styles.btn2}>click2</button>
+        </div>
+      </div>
+    </>
+  )
+}
