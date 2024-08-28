@@ -12,21 +12,36 @@ export default function NewItem(){
 
     const scrollRef = useRef(null)
 
-    function RightRef(){
-        scrollRef.current.scrollBy({ left: -200, behavior: 'smooth' })
+    function RightRef() {
+        if (scrollRef.current) {
+            const { scrollLeft, scrollWidth, clientWidth } = scrollRef.current;
+    
+            // Проверяем, есть ли возможность прокрутить дальше вправо
+            if (scrollLeft + clientWidth < scrollWidth) {
+                scrollRef.current.scrollBy({ left: 300, behavior: 'smooth' });
+            }
+        }
     }
-
-    function LeftRef(){
-        scrollRef.current.scrollBy({ left: 200, behavior: 'smooth' })
+    
+    function LeftRef() {
+        if (scrollRef.current) {
+            const { scrollLeft } = scrollRef.current;
+    
+            // Проверяем, есть ли возможность прокрутить дальше влево
+            if (scrollLeft > 0) {
+                scrollRef.current.scrollBy({ left: -300, behavior: 'smooth' });
+            }
+        }
     }
+    
 
     return(
         <>
             <div className={styles.wrapper}>
                 <h1 className={styles.name}>Новинки</h1>
 
-                <div onClick={RightRef} className={styles.arrowLeft}>←</div>
-                <div onClick={LeftRef} className={styles.arrowRight}>→</div>
+                <div onClick={LeftRef} className={styles.arrowLeft}>←</div>
+                <div onClick={RightRef} className={styles.arrowRight}>→</div>
 
                 <div ref={scrollRef} className={styles.items}>
                     <Link to="/Product" className={styles.item1}><span className={styles.text}>Футболки</span></Link>
