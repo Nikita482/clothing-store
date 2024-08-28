@@ -15,10 +15,19 @@ export default function NewItem(){
     function RightRef() {
         if (scrollRef.current) {
             const { scrollLeft, scrollWidth, clientWidth } = scrollRef.current;
-    
-            // Проверяем, есть ли возможность прокрутить дальше вправо
+            
+            // Если не дошли до конца
             if (scrollLeft + clientWidth < scrollWidth) {
-                scrollRef.current.scrollBy({ left: 320, behavior: 'smooth' });
+                // Прокрутка вправо
+                scrollRef.current.scrollBy({ left: 300, behavior: 'smooth' });
+                
+                // После завершения прокрутки докручиваем до ближайшего snap элемента
+                setTimeout(() => {
+                    scrollRef.current.scrollTo({
+                        left: Math.round(scrollRef.current.scrollLeft / 310) * 310, // 310 - это ширина item + margin
+                        behavior: 'smooth'
+                    });
+                }, 300); // Задержка для завершения основной прокрутки
             }
         }
     }
@@ -27,12 +36,22 @@ export default function NewItem(){
         if (scrollRef.current) {
             const { scrollLeft } = scrollRef.current;
     
-            // Проверяем, есть ли возможность прокрутить дальше влево
+            // Если не дошли до начала
             if (scrollLeft > 0) {
-                scrollRef.current.scrollBy({ left: -320, behavior: 'smooth' });
+                // Прокрутка влево
+                scrollRef.current.scrollBy({ left: -300, behavior: 'smooth' });
+                
+                // После завершения прокрутки докручиваем до ближайшего snap элемента
+                setTimeout(() => {
+                    scrollRef.current.scrollTo({
+                        left: Math.round(scrollRef.current.scrollLeft / 310) * 310, // 310 - это ширина item + margin
+                        behavior: 'smooth'
+                    });
+                }, 300); // Задержка для завершения основной прокрутки
             }
         }
     }
+    
     
 
     return(
