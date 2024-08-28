@@ -8,6 +8,11 @@ import Full from './Full/Full.jsx'
 import Product from './Full/product/product.jsx'
 import Info from './Full/fotter/info/info.jsx'
 
+
+import Test from './Full/test/test.jsx'
+
+
+
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     <Router basename='/clothing-store'>
@@ -15,6 +20,7 @@ createRoot(document.getElementById('root')).render(
         <Route path='/' element={<Full />} />
         <Route path='/Product' element={<Product />} />
         <Route path='/Info' element={<Info />} />
+        <Route path='/Test' element={<Test />} />
       </Routes>
     </Router>
   </StrictMode>,

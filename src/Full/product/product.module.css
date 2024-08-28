@@ -1,48 +1,51 @@
-.box{
-  width: 90%;
-  height: auto;
-  display: flex;
-  margin: 50px auto;
+.wrapper {
   position: relative;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  width: 100%; /* Или укажите конкретную ширину */
 }
 
-
-.test{
-  width: 500px;
-  height: 500px;
-  background-color: green;
+.leftArrow, .rightArrow{
   position: absolute;
-  left: 100px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  z-index: 10;
+}
+.leftArrow {
+  left: 10px;
+}
+.rightArrow {
+  right: 10px;
 }
 
 
-.btn1, .btn2{
-  width: 100px;
-  height: 100px;
-  background-color: yellow;
-  font-size: 30px;
-  color: black;
-}
-.btn1{
-  margin-left: 300px;
+.Content {
+  display: flex;
+  overflow-x: auto;
+  white-space: nowrap;
+  padding: 0 40px; /* Дополнительное пространство для стрелок */
 }
 
-
-.wrapper1{
-  width: 500px;
-  height: 500px;
-  background-color: red;
-  transition-duration: 1s;
-  position: absolute;
-  left: 100px;
+.item {
+  width: 200px;
+  aspect-ratio: 1 / 1;
+  flex: 0 0 auto;
+  margin: 0 10px;
+  background: #f0f0f0;
+  padding: 20px;
+  border: 1px solid #ddd;
 }
 
 
-.wrapper2{
-  width: 500px;
-  height: 500px;
-  transition-duration: 1s;
-  opacity: 0;
-  position: absolute;
-  left: 100px;
-}
+
+
+
+
+
+

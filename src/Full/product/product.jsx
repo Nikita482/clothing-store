@@ -1,31 +1,60 @@
-import styles from './product.module.css';
+import React, { useRef } from 'react';
+import styles from './product.module.css'; // Импорт стилей из CSS-модуля
 
-import { useState } from 'react';
 
-
-export default function Product(){
-
-  const[state, setState] = useState(true)
-  function click(){
-    setState(!state)
-  }
+import { Link } from 'react-router-dom';
 
 
 
+export default function product(){
+  const scrollRef = useRef(null);
 
-  return(
-    <>
-      <div className={styles.box}>
-        <button onClick={click}>click</button>
+  const scrollLeft = () => {
+    scrollRef.current.scrollBy({ left: -200, behavior: 'smooth' });
+  };
 
-        <div className={styles.test}>
-          <button className={styles.btn1}>click1</button>
-        </div>
+  const scrollRight = () => {
+    scrollRef.current.scrollBy({ left: 200, behavior: 'smooth' });
+  };
 
-        <div className={state ? styles.wrapper1 : styles.wrapper2}>
-          <button className={styles.btn2}>click2</button>
-        </div>
-      </div>
-    </>
-  )
-}
+  return (
+      <>
+          <div className={styles.wrapper}>
+            <button className={styles.leftArrow} onClick={scrollLeft}>&lt;</button>
+            <button className={styles.rightArrow} onClick={scrollRight}>&gt;</button>
+            
+            
+            <div ref={scrollRef} className={styles.Content}>
+              <div className={styles.item}>Item 1</div>
+              <div className={styles.item}>Item 2</div>
+              <div className={styles.item}>Item 3</div>
+              <div className={styles.item}>Item 4</div>
+              <div className={styles.item}>Item 5</div>
+              <div className={styles.item}>Item 1</div>
+              <div className={styles.item}>Item 2</div>
+              <div className={styles.item}>Item 3</div>
+              <div className={styles.item}>Item 4</div>
+              <div className={styles.item}>Item 5</div>
+              <div className={styles.item}>Item 1</div>
+              <div className={styles.item}>Item 2</div>
+              <div className={styles.item}>Item 3</div>
+              <div className={styles.item}>Item 4</div>
+              <div className={styles.item}>Item 5</div>
+              <div className={styles.item}>Item 1</div>
+              <div className={styles.item}>Item 2</div>
+              <div className={styles.item}>Item 3</div>
+              <div className={styles.item}>Item 4</div>
+              <div className={styles.item}>Item 5</div>
+              <div className={styles.item}>Item 1</div>
+              <div className={styles.item}>Item 2</div>
+              <div className={styles.item}>Item 3</div>
+              <div className={styles.item}>Item 4</div>
+              <div className={styles.item}>Item 5</div>
+            </div>
+          </div>
+
+          <Link to="/Test">123</Link>
+      </>
+  );
+};
+
