@@ -47,7 +47,7 @@ export default function NewItem(){
                         left: Math.round(scrollRef.current.scrollLeft / 310) * 310, // 310 - это ширина item + margin
                         behavior: 'smooth'
                     });
-                }, 0); // Задержка для завершения основной прокрутки
+                }, 300); // Задержка для завершения основной прокрутки
             }
         }
     }
