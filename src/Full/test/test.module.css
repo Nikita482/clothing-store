@@ -1,27 +1,34 @@
-.wrapper{
-    width: 100%;
-    height: 300px;
-    margin: 30px auto;
-    background-color: red;
+/* HorizontalScroll.module.css */
+.container {
     display: flex;
     align-items: center;
+  }
+  
+  .scrollContainer {
+    display: flex;
     overflow-x: auto;
-    -webkit-overflow-scrolling: touch;
-    scroll-snap-type: x mandatory;
-}
-
-
-.item{
-    width: 200px;
-    height: 200px;
-    background-color: blue;
-    margin-right: 10px;
-    flex: 0 0 auto;
-    scroll-snap-align: start;
-    font-size: 30px;
+    scroll-behavior: smooth;
+    width: 300px; /* Установите нужную ширину */
+  }
+  
+  .item {
+    min-width: 100px; /* Ширина каждого элемента */
+    margin: 0 10px; /* Отступы между элементами */
+    background-color: #ccc; /* Фон элемента */
+    padding: 20px;
+    text-align: center;
+    border-radius: 5px;
+  }
+  
+  .scrollButton {
+    background-color: #007bff;
     color: white;
-}
-
-
-
-
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+  }
+  
+  .scrollButton:disabled {
+    background-color: #aaa;
+  }
+  
