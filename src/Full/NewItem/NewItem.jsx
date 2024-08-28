@@ -18,7 +18,7 @@ export default function NewItem(){
     
             // Проверяем, есть ли возможность прокрутить дальше вправо
             if (scrollLeft + clientWidth < scrollWidth) {
-                scrollRef.current.scrollBy({ left: 300, behavior: 'smooth' });
+                scrollRef.current.scrollBy({ left: 320, behavior: 'smooth' });
             }
         }
     }
@@ -29,7 +29,7 @@ export default function NewItem(){
     
             // Проверяем, есть ли возможность прокрутить дальше влево
             if (scrollLeft > 0) {
-                scrollRef.current.scrollBy({ left: -300, behavior: 'smooth' });
+                scrollRef.current.scrollBy({ left: -320, behavior: 'smooth' });
             }
         }
     }
