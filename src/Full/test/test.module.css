@@ -1,34 +1,34 @@
-/* HorizontalScroll.module.css */
-.container {
+/* Стили для контейнера карусели */
+.wrapper {
     display: flex;
-    align-items: center;
+    overflow-x: auto; /* Разрешаем горизонтальную прокрутку */
+    scroll-snap-type: x mandatory; /* Принудительное прилипание по горизонтали */
   }
   
-  .scrollContainer {
-    display: flex;
-    overflow-x: auto;
-    scroll-behavior: smooth;
-    width: 300px; /* Установите нужную ширину */
-  }
-  
+  /* Общие стили для каждого элемента карусели */
   .item {
-    min-width: 100px; /* Ширина каждого элемента */
-    margin: 0 10px; /* Отступы между элементами */
-    background-color: #ccc; /* Фон элемента */
-    padding: 20px;
-    text-align: center;
-    border-radius: 5px;
+    flex: 0 0 auto; /* Запрещаем элементам сжиматься, они фиксированной ширины */
+    width: 300px;
+    height: 300px;
+    margin-right: 10px; /* Отступ между элементами */
+    background-color: grey; /* Основной цвет фона */
+    scroll-snap-align: start; /* Прилепляем элемент к началу контейнера при прокрутке */
   }
   
-  .scrollButton {
-    background-color: #007bff;
-    color: white;
-    border: none;
-    padding: 10px;
-    cursor: pointer;
+  /* Индивидуальная стилизация каждого элемента карусели по порядку */
+  .item:nth-child(1) {
+    background-color: lightcoral; /* Цвет для первого элемента */
   }
   
-  .scrollButton:disabled {
-    background-color: #aaa;
+  .item:nth-child(2) {
+    background-color: lightblue; /* Цвет для второго элемента */
+  }
+  
+  .item:nth-child(3) {
+    background-color: lightgreen; /* Цвет для третьего элемента */
+  }
+  
+  .item:nth-child(4) {
+    background-color: lightyellow; /* Цвет для четвертого элемента */
   }
   
