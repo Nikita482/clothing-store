@@ -15,7 +15,7 @@ export default function Man(){
                 <div className={styles.wrapperBottom}>
                     <Link to="/Product" className={styles.department3}><span className={styles.text1}>Джинсы</span></Link>
                     <Link to="/Product" className={styles.department4}><span className={styles.text2}>Куртки</span></Link>
-                    <Link to="/Product" className={styles.department5}><span className={styles.text3}>Аксессуары</span></Link>
+                    <Link to="/Product" className={styles.department5}><span className={styles.text3}>Кросовки</span></Link>
                 </div>
             </div>
 
@@ -25,7 +25,7 @@ export default function Man(){
                 <Link to="/Product" className={styles.MobuleDepartment2}><span className={styles.mobuleText}>Худи</span></Link>
                 <Link to="/Product" className={styles.MobuleDepartment3}><span className={styles.mobuleText}>Джинсы</span></Link>
                 <Link to="/Product" className={styles.MobuleDepartment4}><span className={styles.mobuleText}>Куртки</span></Link>
-                <Link to="/Product" className={styles.MobuleDepartment5}><span className={styles.mobuleText}>Аксессуары</span></Link>
+                <Link to="/Product" className={styles.MobuleDepartment5}><span className={styles.mobuleText}>Кросовки</span></Link>
             </div>
         </>
     )

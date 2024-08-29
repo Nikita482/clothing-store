@@ -105,6 +105,30 @@
 }
 
 
+.wrapperMan, .wrapperWom{
+    position: relative;
+}
+.arrowRight, .arrowLeft{
+    width: 50px;
+    height: 50px;
+    background-image: url("https://i.pinimg.com/564x/e4/fd/af/e4fdaf86d3189073c522d510004a422e.jpg");
+    background-size: cover;
+    opacity: 0.5;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    z-index: 1;
+}
+.arrowLeft {
+    transform: rotate(180deg);
+    left: 10px;
+  }
+.arrowRight {
+    right: 10px;
+}
+
+
+
 .manDepart1, .manDepart2, .manDepart3, .manDepart4, .manDepart5, .manDepart6, .manDepart7, .womDepart1, .womDepart2, .womDepart3, .womDepart4, .womDepart5, .womDepart6, .womDepart7{
     width: 300px;
     aspect-ratio: 3 / 4;
@@ -115,59 +139,59 @@
     border-radius: 30px;
 }
 .manDepart1{
-    background-image: url("https://i.pinimg.com/474x/36/ce/64/36ce64cb1786b589dc805cbe498c8c32.jpg");
+    background-image: url("/src/assets/Accessories/itemMan1.jpg");
     background-size: cover;
 }
 .manDepart2{
-    background-image: url("https://i.pinimg.com/474x/3b/cb/5b/3bcb5b632b2bc59ec7d50eccbb49f5c8.jpg");
+    background-image: url("/src/assets/Accessories/itemMan2.jpg");
     background-size: cover;
 }
 .manDepart3{
-    background-image: url("https://i.pinimg.com/474x/a3/4e/72/a34e72c79b78c89aa9900694fa76e55d.jpg");
+    background-image: url("/src/assets/Accessories/itemMan3.jpg");
     background-size: cover;
 }
 .manDepart4{
-    background-image: url("https://i.pinimg.com/474x/74/87/bd/7487bd889e739653fc1766e54f5644b3.jpg");
+    background-image: url("/src/assets/Accessories/itemMan4.jpg");
     background-size: cover;
 }
 .manDepart5{
-    background-image: url("https://i.pinimg.com/474x/76/38/8b/76388bfa6e57fa864148d781e1d0dc35.jpg");
+    background-image: url("/src/assets/Accessories/itemMan5.jpg");
     background-size: cover;
 }
 .manDepart6{
-    background-image: url("https://i.pinimg.com/474x/44/07/a1/4407a13457399c7f5f1d08cb4929ce14.jpg");
+    background-image: url("/src/assets/Accessories/itemMan6.jpg");
     background-size: cover;
 }
 .manDepart7{
-    background-image: url("https://i.pinimg.com/474x/26/fd/e5/26fde5751cd120aed8e288673a17d1c8.jpg");
+    background-image: url("/src/assets/Accessories/itemMan7.jpg");
     background-size: cover;
 }
 .womDepart1{
-    background-image: url("https://i.pinimg.com/474x/95/c9/20/95c9202a98c9a5d874507ee3dba836fc.jpg");
+    background-image: url("/src/assets/Accessories/itemWom1.jpg");
     background-size: cover;
 }
 .womDepart2{
-    background-image: url("https://i.pinimg.com/474x/59/33/30/5933305d66ade5c3a7fff04a5b490840.jpg");
+    background-image: url("/src/assets/Accessories/itemWom2.jpg");
     background-size: cover;
 }
 .womDepart3{
-    background-image: url("https://i.pinimg.com/474x/c1/86/cd/c186cd0c7cd8384d0dce52a8dc5ebcbd.jpg");
+    background-image: url("/src/assets/Accessories/itemWom3.jpg");
     background-size: cover;
 }
 .womDepart4{
-    background-image: url("https://i.pinimg.com/474x/42/0c/54/420c5474203f704fa939282834d1ad8c.jpg");
+    background-image: url("/src/assets/Accessories/itemWom4.jpg");
     background-size: cover;
 }
 .womDepart5{
-    background-image: url("https://i.pinimg.com/474x/cb/4d/c0/cb4dc0bbd54adbfc2a82d990247969ca.jpg");
+    background-image: url("/src/assets/Accessories/itemWom5.jpg");
     background-size: cover;
 }
 .womDepart6{
-    background-image: url("https://i.pinimg.com/474x/89/c3/b3/89c3b31ea05b34be5f9295c479653cfc.jpg");
+    background-image: url("/src/assets/Accessories/itemWom6.jpg");
     background-size: cover;
 }
 .womDepart7{
-    background-image: url("https://i.pinimg.com/474x/1b/9f/7a/1b9f7ac7263348f814d34d28ab7ecb4f.jpg");
+    background-image: url("/src/assets/Accessories/itemWom7.jpg");
     background-size: cover;
 }
 
@@ -228,5 +252,9 @@
 @media (max-width: 380px) {
     .manDepart1, .manDepart2, .manDepart3, .manDepart4, .manDepart5, .manDepart6, .manDepart7, .womDepart1, .womDepart2, .womDepart3, .womDepart4, .womDepart5, .womDepart6, .womDepart7{
         width: 100%;
+    }
+    .arrowRight, .arrowLeft{
+        width: 40px;
+        height: 40px;
     }
 }

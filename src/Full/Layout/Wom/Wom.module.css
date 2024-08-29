@@ -27,7 +27,6 @@
 .department3, .department4, .department5{
     width: 30%;
     aspect-ratio: 3 / 4;
-    background-color: green;
     margin-top: 30px;
 }
 
@@ -68,11 +67,11 @@
     background-position-y: -5px;
 }
 .department5{
-    background-image: url("https://i.pinimg.com/736x/de/8e/f8/de8ef8cfb3c4773227c49fbd1fe1445c.jpg");
+    background-image: url("/src/assets/wom/sneakers.jpg");
     border-bottom-right-radius: 30px;
-    background-size: 105%;
-    background-position-y: -50px;
     background-position-x: -5px;
+    background-position-y: -5px;
+    background-size: 105%;
 }
 .department1:hover,
 .department2:hover,
@@ -135,7 +134,7 @@
     background-position-y: -50px;
 }
 .MobuleDepartment5{
-    background-image: url("/src/assets/wom/accessory.jpg");
+    background-image: url("/src/assets/wom/sneakers.jpg");
     background-position-y: -100px;
 }
 
