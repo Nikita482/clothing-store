@@ -122,6 +122,34 @@
 .CenterBtn:hover{
     background-color: rgb(111, 111, 111);
 }
+.CenterBtn{
+    position: relative;
+}
+.connectVis, .connectNotVis{
+    position: absolute;
+    width: 200%;
+    height: auto;
+    background-color: rgb(86, 86, 86);
+    top: 100%;
+    transition-duration: 1s;
+    text-align: start;
+}
+.connectNotVis{
+    top: -300px;
+    opacity: 0;
+    pointer-events: none;
+}
+.helpWindow{
+    padding: 10px 5px 25px 25px;
+}
+.jobTitle{
+    list-style-type: disc;
+}
+.email{
+    list-style-type: none;
+    margin: 0 0 15px 10px;
+    color: #1183fc;
+}
 
 
 .vk, .inst, .tg, .youTube{
@@ -192,10 +220,63 @@
     border-top-right-radius: 30px;
     background-color: #4a4a4a;
 }
-.btnBox{
+.btnBoxVis, .btnBoxNotVis{
     width: 100%;
     height: auto;
+    position: absolute;
+    top: 0;
+    transition-duration: 1s;
 }
+.btnBoxNotVis{
+    top: -700px;
+    transition-duration: 1s;
+    opacity: 0;
+    pointer-events: none;
+}
+.infoVis, .infoNotVis{
+    width: 100%;
+    height: 100px;
+    position: absolute;
+    top: 0;
+    transition-duration: 1s;
+}
+.infoNotVis{
+    position: absolute;
+    top: 700px;
+    pointer-events: none;
+    opacity: 0;
+}
+.infoVisWindow{
+    padding: 10px 5px 0 25px;
+    font-size: 23px;
+    color: white;
+}
+.infoVisWinEmail{
+    list-style-type: none;
+    margin: 0 0 15px 10px;
+    color: #1183fc;
+    display: flex;
+}
+.infoVisBack, .infoVisClose{
+    width: 90%;
+    height: 60px;
+    font-size: 20px;
+    border: none;
+    background-color: #4a4a4a;
+    color: white;
+    border-radius: 30px;
+    display: block;
+    margin: 10px auto;
+    transition-duration: 0.3s;
+}
+.infoVisClose{
+    font-size: 23px;
+}
+.linker3{
+    position: relative;
+}
+
+
 .chapter, .chapterBack{
     width: 90%;
     height: 70px;
@@ -376,6 +457,43 @@ html {
 }
 
 
+@media (max-width: 400px) {
+    .name{
+        font-size: 30px;
+    }
+    .btnMenu{
+        width: 45px;
+        height: 45px;
+    }
+    .helpNotVis{
+        right: -120%;
+    }
+}
+
+
+@media (max-width: 360px) {
+    .infoVisWinEmail{
+        display: block;
+    }
+}
+
+
+@media (max-width: 350px) {
+    .helpNotVis{
+        right: -150%;
+    }
+    .btnBack{
+        font-size: 21px;
+        height: 50px;
+    }
+}
+
+
+@media (max-width: 270px) {
+    .helpNotVis{
+        right: -180%;
+    }
+}
 
 
 
@@ -426,6 +544,17 @@ html {
 }
 
 
+@media (max-height: 440px) {
+    .infoVisLinker{
+        display: flex;
+    }
+    .infoVisBack, .infoVisClose{
+        height: 50px;
+    }
+}
+
+
+
 @media (max-height: 380px) {
     .btnBack{
         height: 50px;
@@ -439,6 +568,9 @@ html {
     }
     .socials{
         height: 70px;
+    }
+    .infoVisWinEmail{
+        margin: 0 0 5px 10px;
     }
 }
 
@@ -457,33 +589,3 @@ html {
 
 
 
-@media (max-width: 400px) {
-    .name{
-        font-size: 30px;
-    }
-    .btnMenu{
-        width: 45px;
-        height: 45px;
-    }
-    .helpNotVis{
-        right: -120%;
-    }
-}
-
-
-@media (max-width: 350px) {
-    .helpNotVis{
-        right: -150%;
-    }
-    .btnBack{
-        font-size: 21px;
-        height: 50px;
-    }
-}
-
-
-@media (max-width: 270px) {
-    .helpNotVis{
-        right: -180%;
-    }
-}

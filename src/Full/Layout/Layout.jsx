@@ -48,6 +48,25 @@ export default function Layout(){
     }
 
 
+    const[connectUse, setConnectUse] = useState(true)
+    const connect = ()=>{
+        setConnectUse(!connectUse)
+    }
+
+
+    const[connectWindowuUse, setConnectWindowuUse] = useState(true)
+    const connectWindow = ()=>{
+        setConnectWindowuUse(!connectWindowuUse)
+    }
+
+    const connectWindowBack = ()=>{
+        menu()
+        if(connectWindowuUse === false){
+            connectWindow()
+        }
+    }
+
+
     useEffect(() => {
         const handleResize = () => {
             if (window.innerWidth <= 768) {
@@ -85,7 +104,17 @@ export default function Layout(){
                         <a href="#department" onClick={manBtn} className={wom ? styles.leftBtnBlue : styles.leftBtn}>Мужская одежда</a>
                         <a href="#department" onClick={womBtn} className={wom ? styles.CenterBtn : styles.CenterBtnPink}>Женская одежда</a>
                         <button onClick={helpClick} className={styles.CenterBtn}>Помощь</button>
-                        <button className={styles.CenterBtn}>Связь с нами</button>
+                        <button onClick={connect} className={styles.CenterBtn}>
+                            Связь с нами
+                            <div className={connectUse ? styles.connectNotVis : styles.connectVis}>
+                                <ul className={styles.helpWindow}>
+                                    <li className={styles.jobTitle}>Менеджер по контенту:</li>
+                                    <li className={styles.email}>contentmanager@gmail.com</li>
+                                    <li className={styles.jobTitle}>Руководитель службы поддержки:</li>
+                                    <li className={styles.email}>supportlead@gmail.com</li>
+                                </ul>
+                            </div>
+                        </button>
                     </div>
 
                     <div className={styles.rightBox}>
@@ -105,18 +134,34 @@ export default function Layout(){
                     <div className={styles.youTube}></div>
                 </div>
 
-                <div className={styles.btnBox}>
-                    <div className={styles.linker1}>
-                        <button className={styles.chapter}>Мужская одежда</button>
-                        <button className={styles.chapter}>Женская одежда</button>
+                <div className={styles.linker3}>
+                    <div className={connectWindowuUse ? styles.btnBoxVis : styles.btnBoxNotVis}>
+                        <div className={styles.linker1}>
+                            <button className={styles.chapter}>Мужская одежда</button>
+                            <button className={styles.chapter}>Женская одежда</button>
+                        </div>
+                        
+                        <div className={styles.linker2}>
+                            <button onClick={helpClick} className={styles.chapter}>Помощь</button>
+                            <button onClick={connectWindow} className={styles.chapter}>Связь с нами</button>
+                        </div>
+
+                        <button onClick={menu} className={styles.chapterBack}>Закрыть</button>
                     </div>
                     
-                    <div className={styles.linker2}>
-                        <button onClick={helpClick} className={styles.chapter}>Помощь</button>
-                        <button className={styles.chapter}>Связь с нами</button>
-                    </div>
+                    <div className={connectWindowuUse ? styles.infoNotVis : styles.infoVis}>
+                        <ul className={styles.infoVisWindow}>
+                            <li className={styles.infoVisWinJobTitle}>Менеджер по контенту:</li>
+                            <li className={styles.infoVisWinEmail}>contentmanager<p>@gmail.com</p></li>
+                            <li className={styles.infoVisWinJobTitle}>Руководитель службы поддержки:</li>
+                            <li className={styles.infoVisWinEmail}>supportlead<p>@gmail.com</p></li>
+                        </ul>
 
-                    <button onClick={menu} className={styles.chapterBack}>Закрыть</button>
+                        <div className={styles.infoVisLinker}>
+                            <button onClick={connectWindow} className={styles.infoVisBack}>Назад</button>
+                            <button onClick={connectWindowBack} className={styles.infoVisClose}>Закрыть</button>
+                        </div>
+                    </div>
                 </div>
             </div>
 
