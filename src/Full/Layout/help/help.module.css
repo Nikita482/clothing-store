@@ -1,0 +1,201 @@
+.wrapper{
+    width: 95%;
+    height: 97%;
+}
+
+.name{
+    width: 100%;
+    height: 50px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.pole, .poleMassage{
+    width: 100%;
+    height: 50px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+.poleMassage{
+    height: auto;
+    display: flex;
+    align-items: flex-start;
+    top: 30px;
+}
+.nameUser, .email, .sms, .smsMobule{
+    font-size: 23px;
+    color: white;
+    margin: 0 10px 0 5px;
+}
+.sms, .smsMobule{
+    margin-top: 10px;
+}
+.input{
+    width: 100%;
+    height: 70%;
+    border-radius: 30px;
+    font-size: 20px;
+    padding-left: 10px;
+}
+.massage{
+    width: 100%;
+    height: 200px;
+    border-radius: 30px;
+    font-size: 20px;
+    display: flex;
+    padding: 10px;
+    resize: none;
+    transition-duration: 500ms;
+}
+.final{
+    width: 90%;
+    height: 70px;
+    background-color: #4a4a4a;
+    color: white;
+    font-size: 25px;
+    margin: 0 auto;
+    border-radius: 30px;
+    display: flex;
+    border: none;
+    transition-duration: 500ms;
+}
+
+
+.linker{
+    display: block;
+    align-items: center;
+}
+
+
+.smsMobule{
+    display: none;
+}
+
+
+
+@media (max-height: 650px) {
+    .final{
+        height: 60px;
+    }
+    .massage{
+        height: 170px;
+    }
+}
+
+
+@media (max-height: 580px) {
+    .massage{
+        height: 150px;
+    }
+}
+
+
+@media (max-height: 560px) {
+    .massage{
+        height: 130px;
+    }
+}
+
+
+@media (max-height: 540px) {
+    .massage{
+        height: 110px;
+    }
+}
+
+
+@media (max-height: 520px) {
+    .massage{
+        height: 90px;
+    }
+}
+
+
+@media (max-height: 500px) {
+    .massage{
+        height: 70px;
+    }
+}
+
+
+@media (max-height: 470px) {
+    .massage{
+        height: 50px;
+    }
+}
+
+
+@media (max-height: 450px) {
+    .linker{
+        display: flex;
+    }
+}
+
+
+@media (max-height: 380px) {
+    .final{
+        height: 50px;
+    }
+    .linker{
+        height: 50px;
+    }
+    .poleMassage{
+        margin-bottom: 5px;
+    }
+    .pole{
+        margin: 0;
+    }
+}
+
+
+@media (max-height: 330px) {
+    .poleMassage{
+        margin-bottom: 5px;
+    }
+    .pole{
+        height: 40px;
+    }
+    .input{
+        height: 90%;
+    }
+    .massage{
+        height: 40px;
+    }
+}
+
+
+@media (max-height: 290px) {
+    .name{
+        display: none;
+    }
+}
+
+
+
+@media (max-width: 350px) {
+    .name{
+        font-size: 25px;
+    }
+    .sms{
+        display: none;
+    }
+    .smsMobule{
+        display: flex;
+    }
+    .final{
+        font-size: 20px;
+        height: 50px;
+
+    }
+}
+
+
+@media (max-width: 280px) {
+    .nameUser, .email, .smsMobule{
+        display: none;
+    }
+}

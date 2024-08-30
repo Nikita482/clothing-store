@@ -1,34 +1,5 @@
-/* Стили для контейнера карусели */
-.wrapper {
-    display: flex;
-    overflow-x: auto; /* Разрешаем горизонтальную прокрутку */
-    scroll-snap-type: x mandatory; /* Принудительное прилипание по горизонтали */
-  }
-  
-  /* Общие стили для каждого элемента карусели */
-  .item {
-    flex: 0 0 auto; /* Запрещаем элементам сжиматься, они фиксированной ширины */
-    width: 300px;
-    height: 300px;
-    margin-right: 10px; /* Отступ между элементами */
-    background-color: grey; /* Основной цвет фона */
-    scroll-snap-align: start; /* Прилепляем элемент к началу контейнера при прокрутке */
-  }
-  
-  /* Индивидуальная стилизация каждого элемента карусели по порядку */
-  .item:nth-child(1) {
-    background-color: lightcoral; /* Цвет для первого элемента */
-  }
-  
-  .item:nth-child(2) {
-    background-color: lightblue; /* Цвет для второго элемента */
-  }
-  
-  .item:nth-child(3) {
-    background-color: lightgreen; /* Цвет для третьего элемента */
-  }
-  
-  .item:nth-child(4) {
-    background-color: lightyellow; /* Цвет для четвертого элемента */
-  }
-  
+.wrapper{
+  width: 300px;
+  height: 300px;
+  background-color: red;
+}

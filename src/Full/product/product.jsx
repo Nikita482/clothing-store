@@ -3,6 +3,7 @@ import styles from './product.module.css'; // Импорт стилей из CSS
 
 
 import { Link } from 'react-router-dom';
+import Product from '../test/test';
 
 
 
@@ -52,6 +53,12 @@ export default function product(){
               <div className={styles.item}>Item 5</div>
             </div>
           </div>
+
+
+          <Product>
+            <h1>133</h1>
+            <h1>zxc</h1>
+          </Product>
 
           <Link to="/Test">123</Link>
       </>

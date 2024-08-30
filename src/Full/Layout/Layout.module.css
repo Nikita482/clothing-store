@@ -78,6 +78,7 @@
 .leftBox{
     width: 80%;
     height: 100%;
+    display: flex;
 }
 .rightBox{
     width: 20%;
@@ -97,13 +98,22 @@
     background-color: rgb(75, 75, 75);
     color: white;
     transition-duration: 0.3s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+.leftBtn, .CenterBtn{
+    font-size: 22px;
 }
 .leftBtnBlue{
+    font-size: 22px;
     background-color: #2626b9;
     border-bottom-left-radius: 30px;
 }
 .CenterBtnPink{
     background-color: #FF69B4;
+    font-size: 22px;
 }
 .leftBtn{
     border-bottom-left-radius: 30px;
@@ -168,7 +178,7 @@
     top: 50%;
     transform: translatey(-50%);
     background-color: #333333;
-    z-index: 1;
+    z-index: 2;
     border-radius: 30px;
     transition-duration: 1s;
 }
@@ -242,10 +252,52 @@
     width: 90%;
     height: 500px;
     background-color: red;
-
 }
 
 
+.anchor{
+    position: absolute;
+    top: 500px;
+    pointer-events: none;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+.helpVis, .helpNotVis{
+    width: 400px;
+    height: 90%;
+    position: fixed;
+    right: 30px;
+    top: 50%;
+    transform: translatey(-50%);
+    background-color: #333333;
+    z-index: 1;
+    border-radius: 30px;
+    transition-duration: 1s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.helpNotVis{
+    right: -85%;
+
+}
+.btnBack{
+    width: 90%;
+    height: 70px;
+    background-color: #4a4a4a;
+    color: white;
+    font-size: 25px;
+    margin: 10px auto;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition-duration: 500ms;
+}
 
 
 
@@ -292,8 +344,11 @@
     .wrapper{
         width: 100%;
     }
-    .windowNotVisible{
+    .windowNotVisible, .helpVis{
         width: 85%;
+    }
+    .helpVis, .helpNotVis{
+        transition-duration: 1.5s;
     }
     .btnWom{
         display: none;
@@ -309,13 +364,19 @@
 
 
 @media (max-width: 500px) {
-    .windowNotVisible{
+    .windowNotVisible, .helpVis{
         right: -1px;
     }
     .name{
         font-size: 35px;
     }
+    .helpNotVis{
+        right: -100%;
+    }
 }
+
+
+
 
 
 @media (max-height: 700px) {
@@ -325,6 +386,13 @@
     }
     .chapterBack{
         margin-top: 40px;
+        height: 60px;
+    }
+}
+
+
+@media (max-height: 650px) {
+    .btnBack{
         height: 60px;
     }
 }
@@ -351,6 +419,44 @@
 }
 
 
+@media (max-height: 470px) {
+    .linker1, .linker2{
+        display: flex;
+    }
+}
+
+
+@media (max-height: 380px) {
+    .btnBack{
+        height: 50px;
+    }
+}
+
+
+@media (max-height: 360px) {
+    .chapterBack{
+        margin-top: 5px;
+    }
+    .socials{
+        height: 70px;
+    }
+}
+
+
+@media (max-height: 300px) {
+    .chapter{
+        margin: 3px auto;
+    }
+    .chapterBack{
+        height: 40px;
+    }
+    .socials{
+        height: 60px;
+    }
+}
+
+
+
 @media (max-width: 400px) {
     .name{
         font-size: 30px;
@@ -359,7 +465,25 @@
         width: 45px;
         height: 45px;
     }
+    .helpNotVis{
+        right: -120%;
+    }
 }
 
 
+@media (max-width: 350px) {
+    .helpNotVis{
+        right: -150%;
+    }
+    .btnBack{
+        font-size: 21px;
+        height: 50px;
+    }
+}
 
+
+@media (max-width: 270px) {
+    .helpNotVis{
+        right: -180%;
+    }
+}

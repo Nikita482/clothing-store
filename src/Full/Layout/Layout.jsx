@@ -5,13 +5,35 @@ import { useEffect } from "react"
 
 import Man from "./Man/Man"
 import Wom from "./Wom/Wom"
+import Help from "./help/help"
 
 export default function Layout(){
     
     const[popupWindow, setWindow] = useState(true)
     const menu = () =>{
-        setWindow(!popupWindow)
+        if(help === false){
+            setHelp(!help)
+            setWindow(!popupWindow)
+        }else{
+            setWindow(!popupWindow)
+        }
     }
+
+
+    const[help, setHelp] = useState(true)
+    function helpClick(){
+        if(popupWindow === false){
+            setHelp(!help)
+            setWindow(!popupWindow)
+        }else{
+            setHelp(!help)
+        }
+    }
+
+    const helpBack = () =>{
+        setHelp(!help)
+    }
+
 
     const[wom, setWom] = useState(true)
     function womBtn(){
@@ -24,6 +46,7 @@ export default function Layout(){
             setWom(!wom)
         }
     }
+
 
     useEffect(() => {
         const handleResize = () => {
@@ -51,17 +74,17 @@ export default function Layout(){
                     <h1 className={styles.name}>GlamGarb</h1>
 
                     <div className={styles.boxBtn}>
-                        <div onClick={womBtn} className={styles.btnWom}></div>
-                        <div onClick={manBtn} className={styles.btnMan}></div>
+                        <a href="#department" onClick={womBtn} className={styles.btnWom}></a>
+                        <a href="#department" onClick={manBtn} className={styles.btnMan}></a>
                         <div onClick={menu} className={styles.btnMenu}>☰</div>
                     </div>
                 </div>
 
                 <div className={styles.menu}>
                     <div className={styles.leftBox}>
-                        <button onClick={manBtn} className={wom ? styles.leftBtnBlue : styles.leftBtn}>Мужская одежда</button>
-                        <button onClick={womBtn} className={wom ? styles.CenterBtn : styles.CenterBtnPink}>Женская одежда</button>
-                        <button className={styles.CenterBtn}>Помощь</button>
+                        <a href="#department" onClick={manBtn} className={wom ? styles.leftBtnBlue : styles.leftBtn}>Мужская одежда</a>
+                        <a href="#department" onClick={womBtn} className={wom ? styles.CenterBtn : styles.CenterBtnPink}>Женская одежда</a>
+                        <button onClick={helpClick} className={styles.CenterBtn}>Помощь</button>
                         <button className={styles.CenterBtn}>Связь с нами</button>
                     </div>
 
@@ -83,13 +106,27 @@ export default function Layout(){
                 </div>
 
                 <div className={styles.btnBox}>
-                    <button className={styles.chapter}>Мужская одежда</button>
-                    <button className={styles.chapter}>Женская одежда</button>
-                    <button className={styles.chapter}>Помощь</button>
-                    <button className={styles.chapter}>Связь с нами</button>
+                    <div className={styles.linker1}>
+                        <button className={styles.chapter}>Мужская одежда</button>
+                        <button className={styles.chapter}>Женская одежда</button>
+                    </div>
+                    
+                    <div className={styles.linker2}>
+                        <button onClick={helpClick} className={styles.chapter}>Помощь</button>
+                        <button className={styles.chapter}>Связь с нами</button>
+                    </div>
+
                     <button onClick={menu} className={styles.chapterBack}>Закрыть</button>
                 </div>
             </div>
+
+            <div className={help ? styles.helpNotVis : styles.helpVis}>
+                <Help>
+                    <h1 onClick={helpBack} className={styles.btnBack}>Закрыть</h1>
+                </Help>
+            </div>
+
+            <div id="department" className={styles.anchor}></div>
 
             <div className={styles.departments}>
                 <Man/>
