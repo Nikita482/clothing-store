@@ -41,7 +41,6 @@ export default function Card(props){
 
     return(
         <>
-        
             <div id="wrapper" className={styles.wrapper}>
                 <img id="foto" className={styles.foto} src={props.foto} />
 
