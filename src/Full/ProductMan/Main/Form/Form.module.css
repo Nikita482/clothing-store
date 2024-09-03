@@ -1,0 +1,81 @@
+form{
+    width: 80%;
+}
+
+.pole{
+    width: 70%;
+    height: 50px;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+label{
+    font-size: 30px;
+    color: white;
+}
+.massage{
+    width: 80%;
+    height: 50px;
+    border-radius: 30px;
+    font-size: 20px;
+    padding-left: 10px;
+}
+
+
+.linker{
+    width: 75%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 30px;
+}
+
+.final{
+    width: 45%;
+    height: 55px;
+    background-color: grey;
+    border: 2px solid white;
+    font-size: 25px;
+    border-radius: 30px;
+    color: white;
+}
+
+
+
+@media (max-width: 1250px) {
+    .pole{
+        width: 65%;
+    }
+    .linker{
+        width: 70%;
+    }
+}
+
+
+@media (max-width: 1150px) {
+    .pole{
+        width: 55%;
+    }
+    .linker{
+        width: 60%;
+    }
+}
+
+
+@media (max-width: 750px) {
+    .pole{
+        width: 120%;
+    }
+    .linker{
+        width: 130%;
+    }
+}
+
+
+@media (max-width: 400px) {
+    label{
+        font-size: 25px;
+    }
+}

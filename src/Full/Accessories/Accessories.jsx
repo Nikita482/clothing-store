@@ -44,13 +44,13 @@ export default function Accessories(){
                     <div className={department ? styles.arrowRight : styles.arrowRightNot}></div>
 
                     <div className={department ? styles.manVis : styles.manNotVis}>
-                        <Link to="/Product" className={styles.manDepart1}></Link>
-                        <Link to="/Product" className={styles.manDepart2}></Link>
-                        <Link to="/Product" className={styles.manDepart3}></Link>
-                        <Link to="/Product" className={styles.manDepart4}></Link>
-                        <Link to="/Product" className={styles.manDepart5}></Link>
-                        <Link to="/Product" className={styles.manDepart6}></Link>
-                        <Link to="/Product" className={styles.manDepart7}></Link>
+                        <Link to="/ProductMan" className={styles.manDepart1}></Link>
+                        <Link to="/ProductMan" className={styles.manDepart2}></Link>
+                        <Link to="/ProductMan" className={styles.manDepart3}></Link>
+                        <Link to="/ProductMan" className={styles.manDepart4}></Link>
+                        <Link to="/ProductMan" className={styles.manDepart5}></Link>
+                        <Link to="/ProductMan" className={styles.manDepart6}></Link>
+                        <Link to="/ProductMan" className={styles.manDepart7}></Link>
                     </div>
                 </div>
 
@@ -59,13 +59,13 @@ export default function Accessories(){
                     <div className={department ? styles.arrowRightNot : styles.arrowRight}></div>
 
                     <div className={department ? styles.womNotVis : styles.womVis}>
-                        <Link to="/Product" className={styles.womDepart1}></Link>
-                        <Link to="/Product" className={styles.womDepart2}></Link>
-                        <Link to="/Product" className={styles.womDepart3}></Link>
-                        <Link to="/Product" className={styles.womDepart4}></Link>
-                        <Link to="/Product" className={styles.womDepart5}></Link>
-                        <Link to="/Product" className={styles.womDepart6}></Link>
-                        <Link to="/Product" className={styles.womDepart7}></Link>
+                        <Link to="/ProductWom" className={styles.womDepart1}></Link>
+                        <Link to="/ProductWom" className={styles.womDepart2}></Link>
+                        <Link to="/ProductWom" className={styles.womDepart3}></Link>
+                        <Link to="/ProductWom" className={styles.womDepart4}></Link>
+                        <Link to="/ProductWom" className={styles.womDepart5}></Link>
+                        <Link to="/ProductWom" className={styles.womDepart6}></Link>
+                        <Link to="/ProductWom" className={styles.womDepart7}></Link>
                     </div>
                 </div>
 

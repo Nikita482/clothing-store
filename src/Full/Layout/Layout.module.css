@@ -133,6 +133,8 @@
     top: 100%;
     transition-duration: 1s;
     text-align: start;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
 }
 .connectNotVis{
     top: -300px;
