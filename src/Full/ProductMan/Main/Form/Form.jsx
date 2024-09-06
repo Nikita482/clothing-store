@@ -11,35 +11,37 @@ export default function Form(props){
 
                 <div className={styles.pole}>
                     <label>Имя:</label>
-                    <input className={styles.massage} placeholder="чем вам помочь?" name="Имя:" required></input>
+                    <input className={styles.massage} placeholder="Имя:" name="Имя:" required></input>
                 </div>   
 
                 <div className={styles.pole}>
                     <label>номер:</label>
-                    <input className={styles.massage} placeholder="чем вам помочь?" name="номер:" required></input>
+                    <input className={styles.massage} placeholder="номер:" name="номер:" required></input>
                 </div> 
 
                 <div className={styles.pole}>
                     <label>Адресс:</label>
-                    <input className={styles.massage} placeholder="чем вам помочь?" name="Адресс:" required></input>
+                    <input className={styles.massage} placeholder="Адресс:" name="Адресс:" required></input>
                 </div>
 
                 <div className={styles.pole}>
                     <label>Дата:</label>
-                    <input className={styles.massage} placeholder="чем вам помочь?" name="Дата:" required></input>
+                    <input className={styles.massage} placeholder="Дата:" name="Дата:" required></input>
                 </div> 
 
                 <div className={styles.pole}>
                     <label>Время:</label>
-                    <input className={styles.massage} placeholder="чем вам помочь?" name="Время:" required></input>
+                    <input className={styles.massage} placeholder="Время:" name="Время:" required></input>
                 </div> 
 
                 <div className={styles.linker}>
-                    <input className={styles.final} type="submit" value="Отправить"></input>
-
                     {props.children}
+
+                    <input className={styles.final} type="submit" value="Отправить"></input>
                 </div>
             </form>
         </>
     )
 }
+
+

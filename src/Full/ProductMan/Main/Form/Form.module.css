@@ -1,81 +1,74 @@
 form{
-    width: 80%;
+    padding: 10px;
 }
 
 .pole{
-    width: 70%;
+    width: 100%;
     height: 50px;
-    margin-top: 20px;
+    margin-bottom: 10px;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 label{
-    font-size: 30px;
+    min-width: 90px;
+    height: 50px;
     color: white;
+    font-size: 25px;
+    display: flex;
+    align-items: center;
 }
 .massage{
-    width: 80%;
-    height: 50px;
+    width: 100%;
+    height: 40px;
     border-radius: 30px;
     font-size: 20px;
     padding-left: 10px;
 }
 
-
 .linker{
-    width: 75%;
-    height: 100px;
+    width: 100%;
+    height: auto;
     display: flex;
-    align-items: center;
     justify-content: space-around;
-    margin-top: 30px;
+    margin-top: 20px;
 }
-
 .final{
-    width: 45%;
-    height: 55px;
-    background-color: grey;
-    border: 2px solid white;
-    font-size: 25px;
-    border-radius: 30px;
+    width: 48%;
+    height: 50px;
+    background: linear-gradient(to right, #8bc34a, #28a745, #8bc34a);
     color: white;
+    font-size: 23px;
+    border: none;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
 }
 
 
 
-@media (max-width: 1250px) {
-    .pole{
-        width: 65%;
-    }
-    .linker{
-        width: 70%;
-    }
-}
 
-
-@media (max-width: 1150px) {
-    .pole{
-        width: 55%;
-    }
-    .linker{
-        width: 60%;
-    }
-}
-
-
-@media (max-width: 750px) {
-    .pole{
-        width: 120%;
-    }
-    .linker{
-        width: 130%;
-    }
-}
-
-
-@media (max-width: 400px) {
+@media (max-width: 950px) {
     label{
-        font-size: 25px;
+        display: none;
+    }
+}
+
+@media (max-width: 800px) {
+    label{
+        display: flex;
+    }
+}
+
+@media (max-width: 350px) {
+    label{
+        display: none;
+    }
+    .linker{
+        display: block;
+    }
+    .final{
+        width: 100%;
     }
 }

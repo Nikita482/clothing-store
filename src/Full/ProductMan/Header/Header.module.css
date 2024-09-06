@@ -26,3 +26,12 @@ header{
     border-bottom-left-radius: 30px;
     border-bottom-right-radius: 30px;
 }
+
+
+
+
+@media (max-width: 768px) {
+    header{
+        width: 100%;
+    }
+}

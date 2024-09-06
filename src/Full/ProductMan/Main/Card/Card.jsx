@@ -49,7 +49,7 @@ export default function Card(props){
                     
                     {props.children}
                 </div>
-
+                
                 <button className={styles.order}>
                     <p className={styles.orderBtn}><ion-icon name="cart"></ion-icon></p>
                     Заказать
