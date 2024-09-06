@@ -45,17 +45,11 @@ export default function Card(props){
                 <img id="foto" className={styles.foto} src={props.foto} />
 
                 <div className={styles.box}>
-                    <h1 id="price" className={styles.boxPrice}>{props.price}₽</h1>
-                    
                     {props.children}
                 </div>
-                
-                <button className={styles.order}>
-                    <p className={styles.orderBtn}><ion-icon name="cart"></ion-icon></p>
-                    Заказать
-                </button>
 
                 <div className={styles.info}>
+                    <h1 id="price">{props.price}₽</h1>
                     <p id="name">{props.name}</p>
                     <p id="description">{props.description}</p>
                     <p id="idNum">{props.idNum}</p>

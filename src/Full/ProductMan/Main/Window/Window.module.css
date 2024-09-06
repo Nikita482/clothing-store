@@ -53,6 +53,7 @@
     border: 3px solid transparent;
 }
 .infoSizeBorder{
+    width: 300px;
     border: 3px solid red;
 }
 .infoSizeBlock, .infoSizeBlockBorder{
@@ -65,6 +66,8 @@
     align-items: center;
     color: white;
     font-size: 18px;
+    margin-right: 10px;
+    flex: 0 0 auto;
     border: 3px solid transparent;
 }
 .infoSizeBlockBorder{
@@ -160,12 +163,13 @@
 
 
 @media (max-width: 900px) {
-    .infoSize{
-        width: 280px;
+    .infoSize, .infoSizeBorder{
+        min-width: 90%;
         overflow-x: auto;
         -webkit-overflow-scrolling: touch;
         scroll-snap-type: x mandatory;
     }
+
     .infoSizeBlock, .infoSizeBlockBorder{
         margin-right: 10px;
         flex: 0 0 auto;
@@ -186,7 +190,7 @@
 }
 
 @media (max-width: 860px) {
-    .infoSize{
+    .infoSize, .infoSizeBorder{
         width: 240px;
     }
     .infoSizeBlock, .infoSizeBlockBorder{
@@ -196,7 +200,7 @@
 }
 
 @media (max-width: 840px) {
-    .infoSize{
+    .infoSize, .infoSizeBorder{
         width: 220px;
     }
     .infoSizeBlock, .infoSizeBlockBorder{
@@ -217,10 +221,10 @@
         overflow-y: auto; 
     }
 
-    .infoSize{ 
-        width: 350px;
+    .infoSize, .infoSizeBorder{ 
+        min-width: 350px;
     }
-    
+
     .foto{
         width: 100%;
         border-top-left-radius: 30px;
@@ -240,8 +244,14 @@
 }
 
 @media (max-width: 450px){
-    .infoSize{ 
-        width: 90%;
+    .infoSize, .infoSizeBorder{ 
+        min-width: 90%;
+    }
+    .infoName{
+        font-size: 30px;
+    }
+    .infoPrice{
+        font-size: 20px;
     }
 }
 
@@ -261,6 +271,13 @@
         border-bottom-left-radius: 5px;
         border-bottom-right-radius: 5px;
     }
+    .infoOrder{
+        margin-top: 0px;
+        height: 40px;
+        font-size: 20px;
+        border-bottom-left-radius: 15px;
+        border-bottom-right-radius: 15px;
+    }
 }
 
 @media (max-width: 320px) {
@@ -274,6 +291,12 @@
     .infoSizeBlock, .infoSizeBlockBorder{
         width: 55px;
         height: 55px;
+    }
+    .infoSize, .infoSizeBorder{ 
+        width: 80%;
+    }
+    .infoSize{
+        max-width: 80%;
     }
 }
 
@@ -304,6 +327,8 @@
         height: 55px;
     }
 }
+
+
 
 
 
@@ -340,13 +365,13 @@
 
 @media (max-height: 530px) {
     .infoDescText{
-        max-height: 100px;
+        max-height: 150px;
     }
 }
 
 @media (max-height: 420px) {
     .infoDescText{
-        max-height: 80px;
+        max-height: 120px;
     }
     .infoPrice{
         margin-top: 5px;
