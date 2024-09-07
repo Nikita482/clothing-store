@@ -29,8 +29,20 @@ export default function Window(props){
             setForm(!form)
             formSize.innerHTML = `<input type="hidden" name="Размер:" value="XL" readOnly/>`
         }else{
-            setBorder(!border)
+            if(border === true){
+                setBorder(!border)
+            }
         }
+    }
+
+    
+    const backBtn =()=>{
+        setBorder(true)
+        setSize1(true)
+        setSize2(true)
+        setSize3(true)
+        setSize4(true)
+        setSize5(true)
     }
 
     const[size1, setSize1] = useState(true)
@@ -144,7 +156,7 @@ export default function Window(props){
                             <div className={styles.infoDescEnd}></div>
                         </div>
 
-                        <div className={styles.infoBack}>
+                        <div onClick={backBtn} className={styles.infoBack}>
                             {props.children}
                         </div>
 
