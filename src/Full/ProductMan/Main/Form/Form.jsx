@@ -11,27 +11,27 @@ export default function Form(props){
 
                 <div className={styles.pole}>
                     <label>Имя:</label>
-                    <input className={styles.massage} placeholder="Имя:" name="Имя:" required></input>
+                    <input className={styles.massage} type="text" placeholder="Имя:" name="Имя:" required></input>
                 </div>   
 
                 <div className={styles.pole}>
                     <label>номер:</label>
-                    <input className={styles.massage} placeholder="номер:" name="номер:" required></input>
+                    <input className={styles.massage} type="tel" placeholder="номер:" name="номер:" pattern="[0-9\s\-\+\(\)]*" required></input>
                 </div> 
 
                 <div className={styles.pole}>
                     <label>Адресс:</label>
-                    <input className={styles.massage} placeholder="Адресс:" name="Адресс:" required></input>
+                    <input className={styles.massage} type="text" placeholder="Адресс:" name="Адресс:" required></input>
                 </div>
 
                 <div className={styles.pole}>
                     <label>Дата:</label>
-                    <input className={styles.massage} placeholder="Дата:" name="Дата:" required></input>
+                    <input className={styles.massage} type="date" placeholder="Дата:" name="Дата:" required></input>
                 </div> 
 
                 <div className={styles.pole}>
                     <label>Время:</label>
-                    <input className={styles.massage} placeholder="Время:" name="Время:" required></input>
+                    <input className={styles.massage} type="time" placeholder="Время:" name="Время:" required></input>
                 </div> 
 
                 <div className={styles.linker}>
