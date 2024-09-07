@@ -40,6 +40,78 @@ export default function TShirts(props){
 
                 {props.children}
             </Card>
+
+            <Card price = ""
+                foto = ""
+                description = ""
+                name = ""
+                idNum = "">
+
+                {props.children}
+            </Card>
+
+            <Card price = ""
+                foto = ""
+                description = ""
+                name = ""
+                idNum = "">
+
+                {props.children}
+            </Card>
+
+            <Card price = ""
+                foto = ""
+                description = ""
+                name = ""
+                idNum = "">
+
+                {props.children}
+            </Card>
+
+            <Card price = ""
+                foto = ""
+                description = ""
+                name = ""
+                idNum = "">
+
+                {props.children}
+            </Card>
+
+            <Card price = ""
+                foto = ""
+                description = ""
+                name = ""
+                idNum = "">
+
+                {props.children}
+            </Card>
+
+            <Card price = ""
+                foto = ""
+                description = ""
+                name = ""
+                idNum = "">
+
+                {props.children}
+            </Card>
+
+            <Card price = ""
+                foto = ""
+                description = ""
+                name = ""
+                idNum = "">
+
+                {props.children}
+            </Card>
+
+            <Card price = ""
+                foto = ""
+                description = ""
+                name = ""
+                idNum = "">
+
+                {props.children}
+            </Card>
         </>
     )
 }

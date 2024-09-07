@@ -1,31 +1,162 @@
 header{
     width: 90%;
-    height: 150px;
-    margin: 0 auto;
+    height: 90px;
     background-color: black;
     border-bottom-left-radius: 30px;
     border-bottom-right-radius: 30px;
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
 }
 
-.headerBox{
+.box{
     width: 100%;
-    height: 90px;
+    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
 }
-.headerBoxName{
+
+.boxName{
     color: white;
     font-size: 40px;
 }
 
-.headerMenu{
+.boxBtns{
+    width: auto;
+    height: 100%;
+    position: absolute;
+    right: 0;
+    display: flex;
+    align-items: center;
+}
+.boxBtnsMenu, .boxBtnsWom{
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    border-radius: 10px;
+    margin-right: 15px;
+    transition-duration: 300ms;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 35px;
+    color: black;
+}
+.boxBtnsWom{
+    background-image: url("/src/assets/Signs/SignsWom.jpg");
+    background-size: cover;
+    background-size: 90%;
+    background-position-y: center;
+    background-position-x: center;
+    background-repeat: no-repeat;
+}
+.boxBtnsMenu:hover,
+.boxBtnsWom:hover{
+    transform: scale(1.2);
+}
+
+
+
+.window, .windowVis{
+    width: 400px;
+    height: 90%;
+    background-color: #4B4B4B;
+    position: fixed;
+    right: -430px;
+    border-radius: 30px;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+    transition-duration: 1s;
+}
+.windowVis{
+    right: 30px;
+}
+.windowSocials{
+    width: 100%;
+    height: 80px;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    background-color: #626262;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.windowVk, .windowInst, .windowTg, .windowYouTube{
+    width: 50px;
+    height: 50px;
+    background-size: cover;
+    border-radius: 50%;
+    background-position: center;
+    transition-duration: 300ms;
+    flex: 0 0 auto;
+}
+.windowVk{
+    background-image: url('/src/assets/socials/vk.jpg');
+}
+.windowInst{
+    background-image: url('/src/assets/socials/inst.jpg');
+    background-size: 150%;
+}
+.windowTg{
+    background-image: url('/src/assets/socials/tg.jpg');
+    background-size: 200%;
+}
+.windowYouTube{
+    background-image: url('/src/assets/socials/youTube.jpg');
+    background-size: 200%;
+}
+.windowVk:hover, .windowInst:hover, .windowTg:hover, .windowYouTube:hover{
+    transform: scale(1.2);
+}
+
+.windowBtns{
+    width: 100%;
+    height: auto;
+}
+
+.windowBtn, .windowBack, .windowBtnWom, .windowBtnWomMobul{
     width: 100%;
     height: 60px;
-    background-color: red;
-    border-bottom-left-radius: 30px;
-    border-bottom-right-radius: 30px;
+    background-color: #626262;
+    margin: 15px auto;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 25px;
+    transition-duration: 300ms;
+    text-decoration: none;
 }
+.windowBtnWom{
+    background-color: #FF69B4;
+    width: 90%;
+}
+.windowBtnWomMobul{
+    display: none;
+    background-color: #FF69B4;
+}
+.windowBack{
+    height: 70px;
+    font-size: 30px;
+}
+.windowTextSmall{
+    display: none;
+}
+.windowBtn:hover, .windowBack:hover, .windowBtnWom:hover{
+    transform: scale(1.1);
+}
+.boxA{
+    width: 90%;
+    margin: 0 auto;
+    transition-duration: 300ms;
+}
+
 
 
 
@@ -33,5 +164,126 @@ header{
 @media (max-width: 768px) {
     header{
         width: 100%;
+    }
+}
+
+@media (max-width: 550px) {
+    .box{
+        justify-content: start;
+    }
+    .boxName{
+        margin-left: 15px;
+    }
+}
+
+@media (max-width: 500px) {
+    .boxName{
+        font-size: 35px;
+    }
+    .windowVis{
+        width: 90%;
+        right: 0;
+    }
+    .windowBtn, .windowBtnWom, .windowBtnWomMobul{
+        font-size: 20px;
+    }
+    .windowBack{
+        font-size: 25px;
+    }
+}
+
+@media (max-width: 400px) {
+    .boxA, .windowBtnWom{
+        width: 95%;
+    }
+    .windowTextSmall{
+        display: flex;
+    }
+    .windowText{
+        display: none;
+    }
+}
+
+@media (max-width: 320px) {
+    .boxBtnsWom{
+        display: none;
+    }
+    .boxA, .windowBtnWom{
+        width: 100%;
+    }
+}
+
+@media (max-width: 250px) {
+    .windowVis{
+        width: 100%;
+    }
+}
+
+
+
+@media (max-height: 800px) {
+    .boxA{
+        display: flex;
+        justify-content: space-between;
+        margin-top: 15px;
+    }
+    .windowBtn{
+        width: 48%;
+        margin: 0;
+        height: 50px;
+    }
+    .windowBtnWom{
+        height: 50px;
+    }
+    .windowBack{
+        margin: 0 auto;
+        height: 60px;
+    }
+}
+
+@media (max-height: 480px) {
+    .windowBtnWom, .boxA{
+        margin: 5px auto;
+    }
+    .windowSocials{
+        height: 60px;
+    }
+}
+
+@media (max-height: 400px) {
+    .windowBtn, .windowBtnWom, .windowBtnWomMobul{
+        height: 40px;
+        font-size: 20px;
+    }
+    .windowBack{
+        height: 50px;
+        font-size: 25px;
+    }
+}
+
+@media (max-height: 340px) {
+    .windowBtnWom{
+        display: none;
+    }
+    .windowBack, .windowBtnWomMobul{
+        width: 48%;
+        height: 50px;
+    }
+    .windowBtnWomMobul{
+        display: flex;
+        text-align: center;
+        margin: 0 auto;
+    }
+    .windowSocials{
+        height: 50px;
+    }
+}
+
+@media (max-height: 280px) {
+    .windowSocials{
+        display: none;
+    }
+    .windowBack, .windowBtnWomMobul{
+        height: 40px;
     }
 }

@@ -46,7 +46,7 @@
 .btnWom{
     width: 50px;
     height: 50px;
-    background-image: url("https://i.pinimg.com/474x/70/e9/6e/70e96e9521754ef1c32684dbf9d8f8cb.jpg");
+    background-image: url("/src/assets/Signs/SignsWom.jpg");
     background-size: cover;
     border-radius: 10px;
     margin-left: 10px;
@@ -55,7 +55,7 @@
 .btnMan{
     width: 50px;
     height: 50px;
-    background-image: url("https://i.pinimg.com/474x/8c/75/11/8c7511256dbbe9046c2a3dbcd9b7b387.jpg");
+    background-image: url("/src/assets/Signs/SignsMan.jpg");
     background-size: cover;
     border-radius: 10px;
     margin-left: 10px;

@@ -2,9 +2,13 @@ import styles from "./Main.module.css"
 
 import { useState } from "react"
 
-import Card from "./card/card"
 import Window from "./Window/Window"
 import TShirts from "./Product/TShirts/TShirts"
+import Hoodie from "./Product/Hoodie/Hoodie"
+import Geans from "./Product/Jeans/Jeans"
+import Jackets from "./Product/Jackets/Jackets"
+import Sneakers from "./Product/Sneakers/Sneakers"
+import Accessories from "./Product/Accessories/Accessories"
 
 export default function Main(){
     
@@ -56,26 +60,66 @@ export default function Main(){
                     </Window>
                 </div>
 
-                <h1 className={styles.name}>Футболки</h1>
+                <div className={styles.marginTop}></div>
+
+                <h1 className={styles.name}>Футболки <p id="TShirts" className={styles.nameId}></p></h1>
                 <div className={styles.boxCard}>
-                    {/* <Card price = "1"
-                        foto = "https://i.pinimg.com/564x/c9/34/8c/c9348c5901ea8e0fbcafd2feae7c9834.jpg"
-                        description = "1 Условный оператор (тернарный оператор) позволяет записать условие и два возможных варианта значения в одну строку.Условный оператор (тернарный оператор) позволяет записать условие и два возможных варианта значения в одну строку.Условный оператор (тернарный оператор) позволяет записать условие и два возможных варианта значения в одну строку.Условный оператор (тернарный оператор) позволяет записать условие и два возможных варианта значения в одну строку.Условный оператор (тернарный оператор) позволяет записать условие и два возможных варианта значения в одну строку.Условный оператор (тернарный оператор) позволяет записать условие и два возможных варианта значения в одну строку.Условный оператор (тернарный оператор) позволяет записать условие и два возможных варианта значения в одну строку.Условный оператор (тернарный оператор) позволяет записать условие и два возможных варианта значения в одну строку.Условный оператор (тернарный оператор) позволяет записать условие и два возможных варианта значения в одну строку.Условный оператор (тернарный оператор) позволяет записать условие и два возможных варианта значения в одну строку.Условный оператор (тернарный оператор) позволяет записать условие и два возможных варианта значения в одну строку.Условный оператор (тернарный оператор) позволяет записать условие и два возможных варианта значения в одну строку.Условный оператор (тернарный оператор) позволяет записать условие и два возможных варианта значения в одну строку.Условный оператор (тернарный оператор) позволяет записать условие и два возможных варианта значения в одну строку.Условный оператор (тернарный оператор) позволяет записать условие и два возможных варианта значения в одну строку.Условный оператор (тернарный оператор) позволяет записать условие и два возможных варианта значения в одну строку.Условный оператор (тернарный оператор) позволяет записать условие и два возможных варианта значения в одну строку.Условный оператор (тернарный оператор) позволяет записать условие и два возможных варианта значения в одну строку."
-                        name = "name1"
-                        idNum = "11">
-
-                        <button onClick={win} className={styles.order}>
-                            <p className={styles.orderBtn}><ion-icon name="cart"></ion-icon></p>
-                            <p>Заказать</p>
-                        </button>
-                    </Card> */}
-
                     <TShirts>
                         <button onClick={win} className={styles.order}>
                             <p className={styles.orderBtn}><ion-icon name="cart"></ion-icon></p>
                             <p>Заказать</p>
                         </button>
                     </TShirts>
+                </div>
+
+                <h1 className={styles.name}>Худи <p id="Hoodie" className={styles.nameId}></p></h1>
+                <div className={styles.boxCard}>
+                    <Hoodie>
+                        <button onClick={win} className={styles.order}>
+                            <p className={styles.orderBtn}><ion-icon name="cart"></ion-icon></p>
+                            <p>Заказать</p>
+                        </button>
+                    </Hoodie>
+                </div>
+                
+                <h1 className={styles.name}>Джинсы <p id="Jeans" className={styles.nameId}></p></h1>
+                <div className={styles.boxCard}>
+                    <Geans>
+                        <button onClick={win} className={styles.order}>
+                            <p className={styles.orderBtn}><ion-icon name="cart"></ion-icon></p>
+                            <p>Заказать</p>
+                        </button>
+                    </Geans>
+                </div>
+
+                <h1 className={styles.name}>Куртки <p id="Jackets" className={styles.nameId}></p></h1>
+                <div className={styles.boxCard}>
+                    <Jackets>
+                        <button onClick={win} className={styles.order}>
+                            <p className={styles.orderBtn}><ion-icon name="cart"></ion-icon></p>
+                            <p>Заказать</p>
+                        </button>
+                    </Jackets>
+                </div>
+
+                <h1 className={styles.name}>Кроссовки <p id="Sneakers" className={styles.nameId}></p></h1>
+                <div className={styles.boxCard}>
+                    <Sneakers>
+                        <button onClick={win} className={styles.order}>
+                            <p className={styles.orderBtn}><ion-icon name="cart"></ion-icon></p>
+                            <p>Заказать</p>
+                        </button>
+                    </Sneakers>
+                </div>
+
+                <h1 className={styles.name}>Аксессуары <p id="Accessories" className={styles.nameId}></p></h1>
+                <div className={styles.boxCard}>
+                    <Accessories>
+                        <button onClick={win} className={styles.order}>
+                            <p className={styles.orderBtn}><ion-icon name="cart"></ion-icon></p>
+                            <p>Заказать</p>
+                        </button>
+                    </Accessories>
                 </div>
             </main>
         </>
