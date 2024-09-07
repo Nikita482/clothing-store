@@ -257,7 +257,7 @@
 
 @media (max-width: 400px){
     .infoSize, .infoSizeBorder{ 
-        max-width: 50%;
+        min-width: 90%;
     }
 }
 
@@ -340,27 +340,27 @@
 
 
 @media (max-height: 700px) {
-    .infoSize{
+    /* .infoSize{
         width: 230px;
-    }
+    } */
 }
 
 @media (max-height: 680px) {
-    .infoSize{
+    /* .infoSize{
         width: 250px;
-    }
+    } */
 }
 
 @media (max-height: 660px) {
-    .infoSize{
+    /* .infoSize{
         width: 270px;
-    }
+    } */
 }
 
 @media (max-height: 620px) {
-    .infoSize{
+    /* .infoSize{
         width: 300px;
-    }
+    } */
 }
 
 @media (max-height: 580px) {
