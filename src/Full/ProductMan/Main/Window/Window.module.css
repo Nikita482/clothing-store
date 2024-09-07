@@ -255,6 +255,12 @@
     }
 }
 
+@media (max-width: 400px){
+    .infoSize, .infoSizeBorder{ 
+        max-width: 50%;
+    }
+}
+
 @media (max-width: 350px) {
     .wrapper{
         border: none;
@@ -365,13 +371,13 @@
 
 @media (max-height: 530px) {
     .infoDescText{
-        max-height: 150px;
+        max-height: 180px;
     }
 }
 
 @media (max-height: 420px) {
     .infoDescText{
-        max-height: 120px;
+        max-height: 160px;
     }
     .infoPrice{
         margin-top: 5px;
