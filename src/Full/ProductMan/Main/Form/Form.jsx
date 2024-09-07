@@ -10,27 +10,27 @@ export default function Form(props){
                 <input type="hidden" name="Название формы:" value="Карточка товара" readOnly/> 
 
                 <div className={styles.pole}>
-                    <label>Имя:</label>
+                    <label className={styles.label}>Имя:</label>
                     <input className={styles.massage} type="text" placeholder="Имя:" name="Имя:" required></input>
                 </div>   
 
                 <div className={styles.pole}>
-                    <label>номер:</label>
+                    <label className={styles.label}>номер:</label>
                     <input className={styles.massage} type="tel" placeholder="номер:" name="номер:" pattern="[0-9\s\-\+\(\)]*" required></input>
                 </div> 
 
                 <div className={styles.pole}>
-                    <label>Адресс:</label>
+                    <label className={styles.label}>Адресс:</label>
                     <input className={styles.massage} type="text" placeholder="Адресс:" name="Адресс:" required></input>
                 </div>
 
-                <div className={styles.pole}>
-                    <label>Дата:</label>
-                    <input className={styles.massage} type="date" placeholder="Дата:" name="Дата:" required></input>
+                <div className={styles.poleData}>
+                    <label className={styles.labelData}>Дата:</label>
+                    <input className={styles.massageData} type="date" placeholder="Дата:" name="Дата:" required></input>
                 </div> 
 
-                <div className={styles.pole}>
-                    <label>Время:</label>
+                <div className={styles.poleTime}>
+                    <label className={styles.labelTime}>Время:</label>
                     <input className={styles.massage} type="time" placeholder="Время:" name="Время:" required></input>
                 </div> 
 
