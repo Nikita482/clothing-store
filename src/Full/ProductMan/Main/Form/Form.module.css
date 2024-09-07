@@ -62,7 +62,9 @@ form{
     .poleData, .poleTime{
         justify-content: start;
     }
-    
+    .massage, .massageData{
+        max-width: 100%;
+    }
 }
 
 @media (max-width: 350px) {
