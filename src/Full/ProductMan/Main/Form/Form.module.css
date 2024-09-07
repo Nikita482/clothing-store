@@ -59,6 +59,10 @@ form{
     label{
         display: flex;
     }
+    .poleData, .poleTime{
+        justify-content: start;
+    }
+    
 }
 
 @media (max-width: 350px) {
@@ -84,9 +88,6 @@ form{
 }
 
 @media (max-width: 270px) {
-    .poleData, .poleTime{
-        justify-content: start;
-    }
     .massageData{
         max-width: 150px;
     }
