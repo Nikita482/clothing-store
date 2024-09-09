@@ -9,6 +9,8 @@ export default function NewItem(){
             <div className={styles.wrapper}>
                 <h1 className={styles.name}>Новинки</h1>
 
+                <p id="HomePage" className={styles.wrapperAnchor}>12345</p>
+
                 <div className={styles.arrowLeft}></div>
                 <div className={styles.arrowRight}></div>
 

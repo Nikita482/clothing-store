@@ -12,6 +12,13 @@
     align-items: center;
     color: white;
 }
+.wrapperAnchor{
+    position: absolute;
+    top: -180px;
+    left: -50px;
+    pointer-events: none;
+    opacity: 0;
+}
 
 
 .arrowRight, .arrowLeft{

@@ -3,6 +3,7 @@ import styles from "./Main.module.css"
 import { useState } from "react"
 
 import Window from "./Window/Window"
+import NewItems from "./Product/NewItems/NewItems"
 import TShirts from "./Product/TShirts/TShirts"
 import Hoodie from "./Product/Hoodie/Hoodie"
 import Geans from "./Product/Jeans/Jeans"
@@ -61,6 +62,16 @@ export default function Main(){
                 </div>
 
                 <div className={styles.marginTop}></div>
+                
+                <h1 className={styles.name}>Новинки <p id="NewItems" className={styles.nameId}></p></h1>
+                <div className={styles.boxCard}>
+                    <NewItems>
+                        <button onClick={win} className={styles.order}>
+                            <p className={styles.orderBtn}><ion-icon name="cart"></ion-icon></p>
+                            <p>Заказать</p>
+                        </button>
+                    </NewItems>
+                </div>
 
                 <h1 className={styles.name}>Футболки <p id="TShirts" className={styles.nameId}></p></h1>
                 <div className={styles.boxCard}>

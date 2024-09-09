@@ -33,7 +33,7 @@ header{
     display: flex;
     align-items: center;
 }
-.boxBtnsMenu, .boxBtnsWom{
+.boxBtnsMenu, .boxBtnsWom, .boxBtnsHome{
     width: 50px;
     height: 50px;
     background-color: white;
@@ -54,8 +54,7 @@ header{
     background-position-x: center;
     background-repeat: no-repeat;
 }
-.boxBtnsMenu:hover,
-.boxBtnsWom:hover{
+.boxBtnsMenu:hover, .boxBtnsWom:hover, .boxBtnsHome:hover{
     transform: scale(1.2);
 }
 
@@ -75,16 +74,19 @@ header{
 }
 .windowVis{
     right: 30px;
+    display: flex;
+    flex-direction: column;
 }
 .windowSocials{
     width: 100%;
-    height: 80px;
+    min-height: 80px;
     border-top-left-radius: 30px;
     border-top-right-radius: 30px;
     background-color: #626262;
     display: flex;
     align-items: center;
     justify-content: space-around;
+    transition-duration: 300ms;
 }
 .windowVk, .windowInst, .windowTg, .windowYouTube{
     width: 50px;
@@ -114,49 +116,40 @@ header{
     transform: scale(1.2);
 }
 
-.windowBtns{
-    width: 100%;
-    height: auto;
+.windowBox{
+    display: flex;
+    justify-content: space-between;
 }
 
-.windowBtn, .windowBack, .windowBtnWom, .windowBtnWomMobul{
+.windowBtn, .windowWom, .windowBack, .windowHome, .windowNew{
+    display: block;
     width: 100%;
     height: 60px;
+    margin-top: 15px;
     background-color: #626262;
-    margin: 15px auto;
-    border-radius: 30px;
     display: flex;
     justify-content: center;
     align-items: center;
     color: white;
-    font-size: 25px;
-    transition-duration: 300ms;
+    font-size: 20px;
     text-decoration: none;
+    border-radius: 30px;
+    flex: 0 0 auto;
+    transition-duration: 300ms;
+    text-align: center;
 }
-.windowBtnWom{
+.windowBtn:hover, .windowWom:hover, .windowBack:hover, .windowHome:hover, .windowNew:hover{
+    transform: scale(1.1);
+}
+.windowWom{
     background-color: #FF69B4;
-    width: 90%;
 }
-.windowBtnWomMobul{
-    display: none;
-    background-color: #FF69B4;
-}
-.windowBack{
-    height: 70px;
-    font-size: 30px;
+.windowBtn{
+    width: 48%;
 }
 .windowTextSmall{
     display: none;
 }
-.windowBtn:hover, .windowBack:hover, .windowBtnWom:hover{
-    transform: scale(1.1);
-}
-.boxA{
-    width: 90%;
-    margin: 0 auto;
-    transition-duration: 300ms;
-}
-
 
 
 
@@ -167,7 +160,7 @@ header{
     }
 }
 
-@media (max-width: 550px) {
+@media (max-width: 590px) {
     .box{
         justify-content: start;
     }
@@ -193,7 +186,7 @@ header{
 }
 
 @media (max-width: 400px) {
-    .boxA, .windowBtnWom{
+    .windowBtnWom{
         width: 95%;
     }
     .windowTextSmall{
@@ -204,7 +197,7 @@ header{
     }
 }
 
-@media (max-width: 320px) {
+@media (max-width: 400px) {
     .boxBtnsWom{
         display: none;
     }
@@ -213,77 +206,94 @@ header{
     }
 }
 
+@media (max-width: 340px) {
+    .boxBtnsHome{
+        display: none;
+    }
+    .windowHomeMobul{
+        display: flex;
+    }
+    .windowBack, .windowBtn, .windowHome, .windowNew, .windowWom{
+        height: 50px;
+    }
+}
+
 @media (max-width: 250px) {
     .windowVis{
         width: 100%;
     }
+    .windowBack, .windowBtn, .windowHome, .windowNew, .windowWom{
+        height: 40px;
+    }
 }
 
 
 
-@media (max-height: 800px) {
-    .boxA{
-        display: flex;
-        justify-content: space-between;
-        margin-top: 15px;
+@media (max-height: 690px) {
+    .windowBack, .windowBtn, .windowHome, .windowNew, .windowWom{
+        margin-top: 10px;
     }
     .windowBtn{
-        width: 48%;
-        margin: 0;
         height: 50px;
-    }
-    .windowBtnWom{
-        height: 50px;
-    }
-    .windowBack{
-        margin: 0 auto;
-        height: 60px;
     }
 }
 
-@media (max-height: 480px) {
-    .windowBtnWom, .boxA{
-        margin: 5px auto;
+@media (max-height: 620px) {
+    .windowBack, .windowBtn, .windowHome, .windowNew, .windowWom{
+        margin-top: 5px;
     }
-    .windowSocials{
-        height: 60px;
+    .windowHome, .windowBack, .windowNew, .windowWom{
+        height: 50px;
     }
 }
 
-@media (max-height: 400px) {
-    .windowBtn, .windowBtnWom, .windowBtnWomMobul{
-        height: 40px;
-        font-size: 20px;
-    }
-    .windowBack{
-        height: 50px;
-        font-size: 25px;
-    }
-}
-
-@media (max-height: 340px) {
-    .windowBtnWom{
-        display: none;
-    }
-    .windowBack, .windowBtnWomMobul{
-        width: 48%;
-        height: 50px;
-    }
-    .windowBtnWomMobul{
+@media (max-height: 530px) {
+    .windowCon1{
         display: flex;
-        text-align: center;
-        margin: 0 auto;
+        justify-content: space-between;
     }
-    .windowSocials{
-        height: 50px;
+    .windowWom, .windowNew{
+        width: 48%;
     }
 }
 
-@media (max-height: 280px) {
+@media (max-height: 470px) {
+    .windowCon2{
+        display: flex;
+        justify-content: space-between;
+    }
+    .windowBack, .windowHome{
+        width: 48%;
+    }
+}
+
+@media (max-height: 410px) {
+    .windowSocials{
+        min-height: 50px;
+    }
+}
+
+@media (max-height: 370px) {
     .windowSocials{
         display: none;
     }
-    .windowBack, .windowBtnWomMobul{
+}
+
+@media (max-height: 320px) {
+    .windowBack, .windowBtn, .windowHome, .windowNew, .windowWom{
         height: 40px;
+    }
+}
+
+@media (max-height: 260px) {
+    .windowBack, .windowBtn, .windowHome, .windowNew, .windowWom{
+        margin-top: 3px;
+        height: 35px;
+    }
+}
+
+@media (max-height: 225px) {
+    .windowBack, .windowBtn, .windowHome, .windowNew, .windowWom{
+        height: 30px;
     }
 }
