@@ -6,7 +6,7 @@ export default function NewItems(props){
         <>
 
             <Card price = "1 400"
-                foto = "https://i.pinimg.com/736x/c9/34/8c/c9348c5901ea8e0fbcafd2feae7c9834.jpg"
+                foto = "https://i.pinimg.com/474x/6b/d0/86/6bd08647ec498a8f162b1f9dafe10692.jpg"
                 description = "Футболка Apex – это сочетание минимализма и комфорта. Изготовлена из мягкого хлопка с добавлением эластана, обеспечивая идеальную посадку и свободу движений. Классический крой и лаконичный дизайн делают эту футболку универсальной, подходящей для любого случая – от прогулки до спортивных занятий."
                 name = "Apex"
                 idNum = "1">
@@ -15,7 +15,7 @@ export default function NewItems(props){
             </Card>
 
             <Card price = "1 600"
-                foto = "https://i.pinimg.com/474x/34/2c/f0/342cf09d883699c0a4d806c19da3afe8.jpg"
+                foto = "https://i.pinimg.com/474x/2c/e8/3b/2ce83bd19a7300130cbd81633f854fb6.jpg"
                 description = "Футболка Vector – идеальный выбор для активных мужчин. Влаговпитывающая ткань и эргономичный крой обеспечивают комфорт даже при интенсивных нагрузках. Современный дизайн и стильные принты добавляют динамики и индивидуальности вашему образу."
                 name = "Vector"
                 idNum = "2">
@@ -42,7 +42,7 @@ export default function NewItems(props){
             </Card>
 
             <Card price = "6 000"
-                foto = "https://i.pinimg.com/474x/48/6b/06/486b0600ac2dbe1f07624094448b1143.jpg"
+                foto = "https://i.pinimg.com/474x/c4/28/36/c42836afbdb2e48bcfcd554bbfeca60c.jpg"
                 description = "Куртка Stealth – идеальный выбор для прохладной погоды. Водоотталкивающая и ветронепроницаемая ткань обеспечивает надежную защиту от непогоды. Утепленная подкладка сохраняет тепло, а стильный черный цвет и лаконичный дизайн делают эту куртку универсальной для любого случая."
                 name = "Stealth"
                 idNum = "5">

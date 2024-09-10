@@ -4,110 +4,110 @@ import Card from "../../card/card"
 export default function Jackets(props){
     return(
         <>
-            <Card price = ""
-                foto = ""
-                description = ""
-                name = ""
-                idNum = "">
+            <Card price = "4 500"
+                foto = "https://i.pinimg.com/474x/49/38/d0/4938d0b3bbaca64ac923cced060e11aa.jpg"
+                description = "Куртка Blaze Jacket – стильный и функциональный аксессуар для вашего гардероба. Изготовлена из высококачественного материала, она обеспечивает тепло и защиту от непогоды. Лаконичный дизайн и универсальные цвета делают эту куртку идеальной для любого случая."
+                name = "Blaze"
+                idNum = "133">
 
                 {props.children}
             </Card>
 
-            <Card price = ""
-                foto = ""
-                description = ""
-                name = ""
-                idNum = "">
+            <Card price = "4 800"
+                foto = "https://i.pinimg.com/474x/9d/b0/e0/9db0e0495c587c5d7e826bfaf33a3bbd.jpg"
+                description = "Куртка Icon Jacket – идеальный выбор для тех, кто ценит стиль и комфорт. Изготовлена из прочного и легкого материала, она обеспечивает защиту от ветра и влаги. Оригинальные детали и яркие цвета добавляют образу динамичности и современности."
+                name = "Icon"
+                idNum = "134">
 
                 {props.children}
             </Card>
 
-            <Card price = ""
-                foto = ""
-                description = ""
-                name = ""
-                idNum = "">
+            <Card price = "4 500"
+                foto = "https://i.pinimg.com/474x/e4/71/2c/e4712c000269ae81013299e2d7a4f1f3.jpg"
+                description = "Куртка Apex Jacket – стильный и функциональный аксессуар для вашего гардероба. Изготовлена из высококачественного материала, она обеспечивает тепло и защиту от непогоды. Лаконичный дизайн и универсальные цвета делают эту куртку идеальной для любого случая."
+                name = "Apex"
+                idNum = "135">
 
                 {props.children}
             </Card>
 
-            <Card price = ""
-                foto = ""
-                description = ""
-                name = ""
-                idNum = "">
+            <Card price = "4 800"
+                foto = "https://i.pinimg.com/474x/60/3f/7c/603f7c6a2f94bd655fbe6bfdb3829054.jpg"
+                description = "Куртка Vortex Jacket – идеальный выбор для тех, кто ценит стиль и комфорт. Изготовлена из прочного и легкого материала, она обеспечивает защиту от ветра и влаги. Оригинальные детали и яркие цвета добавляют образу динамичности и современности."
+                name = "Vortex"
+                idNum = "136">
 
                 {props.children}
             </Card>
 
-            <Card price = ""
-                foto = ""
-                description = ""
-                name = ""
-                idNum = "">
+            <Card price = "4 700"
+                foto = "https://i.pinimg.com/474x/cd/74/9e/cd749eb140f78fb0406129548e518477.jpg"
+                description = "Куртка Surge Jacket – для тех, кто ценит динамичный и активный образ жизни. Изготовлена из прочного и легкого материала, она обеспечивает защиту от ветра и влаги. Оригинальные детали и яркие цвета добавляют образу энергии и динамичности."
+                name = "Surge"
+                idNum = "137">
 
                 {props.children}
             </Card>
 
-            <Card price = ""
-                foto = ""
-                description = ""
-                name = ""
-                idNum = "">
+            <Card price = "4 600"
+                foto = "https://i.pinimg.com/474x/c6/92/a3/c692a34476a79067e9f1e75cfac1a45e.jpg"
+                description = "Куртка Edge Jacket – стильный и функциональный выбор для прохладной погоды. Изготовлена из высококачественного материала, она обеспечивает тепло и защиту от непогоды. Лаконичный дизайн и универсальные цвета делают эту куртку идеальной для любого случая."
+                name = "Edge"
+                idNum = "138">
 
                 {props.children}
             </Card>
 
-            <Card price = ""
-                foto = ""
-                description = ""
-                name = ""
-                idNum = "">
+            <Card price = "4 800"
+                foto = "https://i.pinimg.com/474x/0d/af/e3/0dafe3c276d3ab4c09837d00bd932a2c.jpg"
+                description = "Куртка Zenith Jacket – для тех, кто ценит элегантность и комфорт. Изготовлена из прочного и легкого материала, она обеспечивает защиту от ветра и влаги. Оригинальные детали и яркие цвета добавляют образу динамичности и современности."
+                name = "Zenith"
+                idNum = "139">
 
                 {props.children}
             </Card>
 
-            <Card price = ""
-                foto = ""
-                description = ""
-                name = ""
-                idNum = "">
+            <Card price = "4 800"
+                foto = "https://i.pinimg.com/474x/3c/6a/cc/3c6acce3b9f81bad92c56f6727ae4462.jpg"
+                description = "Куртка Gravity Jacket – стильный и функциональный выбор для активных мужчин. Изготовлена из прочного и легкого материала, она обеспечивает защиту от ветра и влаги. Оригинальные детали и яркие цвета добавляют образу энергии и динамичности."
+                name = "Gravity"
+                idNum = "140">
 
                 {props.children}
             </Card>
 
-            <Card price = ""
-                foto = ""
-                description = ""
-                name = ""
-                idNum = "">
+            <Card price = "4 500"
+                foto = "https://i.pinimg.com/474x/92/07/49/920749595e639120816df5dccc5d723d.jpg"
+                description = "Куртка Pulse Jacket – стильный и функциональный аксессуар для вашего гардероба. Изготовлена из высококачественного материала, она обеспечивает тепло и защиту от непогоды. Лаконичный дизайн и универсальные цвета делают эту куртку идеальной для любого случая."
+                name = "Pulse"
+                idNum = "141">
 
                 {props.children}
             </Card>
 
-            <Card price = ""
-                foto = ""
-                description = ""
-                name = ""
-                idNum = "">
+            <Card price = "5 200"
+                foto = "https://i.pinimg.com/474x/27/86/68/278668db46e644f53d4ccf1aeb4df203.jpg"
+                description = "Куртка Momentum Jacket – идеальный выбор для тех, кто ценит стиль и комфорт. Изготовлена из прочного и легкого материала, она обеспечивает защиту от ветра и влаги. Оригинальные детали и яркие цвета добавляют образу динамичности и современности."
+                name = "Momentum"
+                idNum = "142">
 
                 {props.children}
             </Card>
 
-            <Card price = ""
-                foto = ""
-                description = ""
-                name = ""
-                idNum = "">
+            <Card price = "5 200"
+                foto = "https://i.pinimg.com/474x/85/e3/68/85e36895ccfd7b1706cd62737b0ce9e0.jpg"
+                description = "Куртка Elevate Jacket – стильный и функциональный аксессуар для прохладной погоды. Изготовлена из высококачественного материала, она обеспечивает тепло и защиту от непогоды. Лаконичный дизайн и универсальные цвета делают эту куртку идеальной для любого случая."
+                name = "Elevate"
+                idNum = "143">
 
                 {props.children}
             </Card>
 
-            <Card price = ""
-                foto = ""
-                description = ""
-                name = ""
-                idNum = "">
+            <Card price = "4 700"
+                foto = "https://i.pinimg.com/474x/56/46/15/564615998ce01096d30f154fcf6d28db.jpg"
+                description = "Куртка Surge Jacket – для тех, кто ценит динамичный и активный образ жизни. Изготовлена из прочного и легкого материала, она обеспечивает защиту от ветра и влаги. Оригинальные детали и яркие цвета добавляют образу энергии и динамичности."
+                name = "Surge"
+                idNum = "144">
 
                 {props.children}
             </Card>
