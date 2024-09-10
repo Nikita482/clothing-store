@@ -1,0 +1,405 @@
+.wrapper{
+    width: 100%;
+    height: 100%;
+    background-color: #4B4B4B;
+    border-radius: 30px;
+    display: flex;
+    border: 3px solid white;
+}
+
+.foto{
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+}
+
+
+.linker{
+    flex: 1;
+    position: relative;
+}
+
+
+.info, .infoNotVis{
+    flex: 1;
+    padding: 10px;
+    transition-duration: 1s;
+}
+.infoNotVis{
+    transform: scale(0.5);
+    pointer-events: none;
+    opacity: 0;
+}
+
+.infoName{
+    color: white;
+    font-size: 40px;
+}
+
+.infoPrice{
+    color: white;
+    font-size: 25px;
+    margin-top: 10px;
+}
+
+.infoSize, .infoSizeBorder{
+    width: 300px;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 3px solid transparent;
+    border-radius: 30px;
+    padding: 5px 10px;
+    border: 3px solid transparent;
+    transition-duration: 300ms;
+}
+.infoSizeBorder{
+    width: 320px;
+    border: 3px solid red;
+}
+.infoSizeBlock, .infoSizeBlockBorder{
+    width: 50px;
+    height: 50px;
+    background-color: grey;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 18px;
+    margin-right: 10px;
+    flex: 0 0 auto;
+    border: 3px solid transparent;
+}
+.infoSizeBlockBorder{
+    
+    border: 3px solid white;
+    flex: 0 0 auto;
+}
+
+.infoDesc{
+    width: 100%;
+    height: auto;
+    color: white;
+    font-size: 23px;
+    margin-top: 10px;
+    position: relative;
+}
+.infoDescText{
+    width: 100%;
+    height: auto;
+    max-height: 200px;
+    overflow-y: auto;
+}
+.infoDescEnd{
+    width: 100%;
+    height: 15px;
+    position: absolute;
+    bottom: -10px;
+    background: linear-gradient(to top, rgb(218, 218, 218), transparent);
+}
+
+
+.infoOrder{
+    margin-top: 30px;
+    width: 100%;
+    height: 50px;
+    background: linear-gradient(to right, #28a745, #8bc34a);
+    font-size: 25px;
+    color: white;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border: none;
+}
+
+.infoBack{
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+
+
+.form, .formNotVis{
+    width: 100%;
+    height: 100%;
+    transform: scale(1);
+    position: absolute;
+    top: 0;
+    transition-duration: 1s;
+}
+.formNotVis{
+    transform: scale(0.5);
+    pointer-events: none;
+    opacity: 0;
+}
+.formFinal{
+    width: 48%;
+    height: 50px;
+    background: linear-gradient(to right, #b8b8b8, #8e8e8e, #b8b8b8);
+    color: white;
+    font-size: 23px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.formInfo{
+    display: none;
+    pointer-events: none;
+}
+
+
+
+
+
+
+
+@media (max-width: 900px) {
+    .infoSize, .infoSizeBorder{
+        min-width: 90%;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+        scroll-snap-type: x mandatory;
+    }
+
+    .infoSizeBlock, .infoSizeBlockBorder{
+        margin-right: 10px;
+        flex: 0 0 auto;
+        scroll-snap-align: start;
+    }
+    .infoDescText{
+        width: 100%;
+        height: auto;
+        max-height: 250px;
+        overflow-y: auto;
+    }
+}
+
+@media (max-width: 880px) {
+    .infoSize{
+        width: 260px;
+    }
+}
+
+@media (max-width: 860px) {
+    .infoSize, .infoSizeBorder{
+        width: 240px;
+    }
+    .infoSizeBlock, .infoSizeBlockBorder{
+        width: 45px;
+        height: 45px;
+    }
+}
+
+@media (max-width: 840px) {
+    .infoSize, .infoSizeBorder{
+        width: 220px;
+    }
+    .infoSizeBlock, .infoSizeBlockBorder{
+        width: 50px;
+        height: 50px;
+    }
+}
+
+@media (max-width: 820px) {
+    .infoSize{
+        width: 200px;
+    }
+}
+
+@media (max-width: 800px) {
+    .wrapper{
+        display: block; 
+        overflow-y: auto; 
+    }
+
+    .infoSize, .infoSizeBorder{ 
+        min-width: 350px;
+    }
+
+    .foto{
+        width: 100%;
+        border-top-left-radius: 30px;
+        border-top-right-radius: 30px;
+        border-bottom-left-radius: 0px;
+    }
+
+    .infoBack{
+        width: 100%;
+        height: 50px;
+        position: static;
+    }
+    
+    .infoOrder{
+        margin-top: 20px;
+    }
+    .infoDescText{
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 450px){
+    .infoSize, .infoSizeBorder{ 
+        min-width: 90%;
+    }
+    .infoName{
+        font-size: 30px;
+    }
+    .infoPrice{
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 400px){
+    .infoSize, .infoSizeBorder{ 
+        min-width: 90%;
+    }
+}
+
+@media (max-width: 350px) {
+    .wrapper{
+        border: none;
+        border-radius: 0;
+    }
+    .foto{
+        border-radius: 0;
+    }
+    .formFinal{
+        width: 100%;
+        margin-bottom: 15px;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        border-bottom-left-radius: 5px;
+        border-bottom-right-radius: 5px;
+        
+        width: 100%;
+        height: 40px;
+        margin-bottom: 10px;
+        border-bottom-left-radius: 5px;
+        border-bottom-right-radius: 5px;
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+        font-size: 20px;
+    }
+    .infoOrder{
+        margin-top: 0px;
+        height: 40px;
+        font-size: 20px;
+        border-bottom-left-radius: 15px;
+        border-bottom-right-radius: 15px;
+    }
+}
+
+@media (max-width: 320px) {
+    .infoSizeBlock, .infoSizeBlockBorder{
+        width: 45px;
+        height: 45px;
+    }
+}
+
+@media (max-width: 290px) {
+    .infoSizeBlock, .infoSizeBlockBorder{
+        width: 55px;
+        height: 55px;
+    }
+    .infoSize, .infoSizeBorder{ 
+        width: 80%;
+    }
+    .infoSize{
+        max-width: 80%;
+    }
+}
+
+@media (max-width: 255px) {
+    .infoSizeBlock, .infoSizeBlockBorder{
+        width: 50px;
+        height: 50px;
+    }
+}
+
+@media (max-width: 235px) {
+    .infoSizeBlock, .infoSizeBlockBorder{
+        width: 45px;
+        height: 45px;
+    }
+}
+
+@media (max-width: 220px) {
+    .infoSizeBlock, .infoSizeBlockBorder{
+        margin: 3px;
+    }
+}
+
+@media (max-width: 200px) {
+    .infoSizeBlock, .infoSizeBlockBorder{
+        margin: 5px;
+        width: 55px;
+        height: 55px;
+    }
+}
+
+
+
+
+
+
+@media (max-height: 700px) {
+    /* .infoSize{
+        width: 230px;
+    } */
+}
+
+@media (max-height: 680px) {
+    /* .infoSize{
+        width: 250px;
+    } */
+}
+
+@media (max-height: 660px) {
+    /* .infoSize{
+        width: 270px;
+    } */
+}
+
+@media (max-height: 620px) {
+    /* .infoSize{
+        width: 300px;
+    } */
+}
+
+@media (max-height: 580px) {
+    .infoDescText{
+        max-height: 200px;
+    }
+}
+
+@media (max-height: 530px) {
+    .infoDescText{
+        max-height: 180px;
+    }
+}
+
+@media (max-height: 420px) {
+    .infoDescText{
+        max-height: 160px;
+    }
+    .infoPrice{
+        margin-top: 5px;
+    }
+    .infoDesc{
+        margin-top: 5px;
+    }
+    .infoOrder{
+        margin-top: 20px;
+        height: 40px;
+    }
+}

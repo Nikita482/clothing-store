@@ -7,7 +7,7 @@ export default function Form(props){
             <form action="https://api.web3forms.com/submit" method="POST">
 
                 <input type="hidden" name="access_key" value="343878e1-c9ae-4e2b-9d23-0bbde5c07760" />
-                <input type="hidden" name="Название формы:" value="Мужская карточка товара" readOnly/> 
+                <input type="hidden" name="Название формы:" value="Женская карточка товара" readOnly/> 
 
                 <div className={styles.pole}>
                     <label className={styles.label}>Имя:</label>

@@ -1,0 +1,170 @@
+main{
+    width: 90%;
+    height: auto;
+    margin: 0 auto;
+    position: relative;
+}
+
+.marginTop{
+    width: 100%;
+    height: 90px;
+}
+
+.name{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    margin-top: 30px;
+    position: relative;
+}
+.nameId{
+    position: absolute;
+    top: -90px;
+    right: 500px;
+    pointer-events: none;
+    opacity: 0;
+}
+
+.boxCard{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+
+.boxBtn{
+    width: 50%;
+    height: 35px;
+    border-radius: 30px;
+    color: white;
+    font-size: 20px;
+    background-color: grey;
+}
+
+
+.winVis, .winNotVis{
+    width: 90%;
+    height: 90%;
+    position: fixed;
+    border-radius: 30px;
+    z-index: 1;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition-duration: 1s;
+}
+.winNotVis{
+    opacity: 0;
+    pointer-events: none;
+}
+
+.winVisBack{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    color: white;
+}
+
+.winVisBackMobule{
+    width: 100%;
+    height: 50px;
+    margin-top: 30px;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    background: linear-gradient(to right, #b8b8b8, #8e8e8e, #b8b8b8);
+    font-size: 25px;
+    color: white;
+}
+
+
+.order{
+    width: 100%;
+    height: 50px;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    background: linear-gradient(to right, #28a745, #8bc34a);
+    color: white;
+}
+.orderBtn{
+    display: flex;
+    justify-content: center;
+    margin-right: 5px;
+}
+
+
+
+
+
+@media (max-width: 800px) {
+    .winVisBack{
+        display: none;
+    }
+    
+    .winVisBackMobule{
+        display: flex;
+    }
+}
+
+@media (max-width: 768px) {
+    main{
+        width: 100%;
+    }
+}
+
+@media (max-width: 450px) {
+    .order{
+        font-size: 18px;
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+    }
+}
+
+
+
+@media (max-width: 350px) {
+    .winVis, .winNotVis{
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        border-radius: 30px;
+        z-index: 1;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        transition-duration: 1s;
+    }
+    .order{
+        height: 40px;
+    }
+    .winVisBackMobule{
+        height: 40px;
+        margin-top: 20px;
+        border-bottom-left-radius: 5px;
+        border-bottom-right-radius: 5px;
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 250px) {
+    .orderBtn{
+        display: none;
+    }
+}

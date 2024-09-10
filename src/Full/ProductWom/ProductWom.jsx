@@ -1,10 +1,12 @@
-import styles from "./ProductWom.module.css"
+import Header from "../ProductWom/Header/Header"
+import Main from "./Main/Main"
 
 
 export default function ProductWom(){
     return(
         <>
-            <h1 className={styles.color}>ProductWom</h1>
+            <Header/>
+            <Main/>
         </>
     )
 }
