@@ -2,6 +2,7 @@ import styles from "./Layout.module.css"
 
 import { useState } from "react"
 import { useEffect } from "react"
+import { HashLink as Link } from 'react-router-hash-link';
 
 import Man from "./Man/Man"
 import Wom from "./Wom/Wom"
@@ -137,8 +138,8 @@ export default function Layout(){
                 <div className={styles.linker3}>
                     <div className={connectWindowuUse ? styles.btnBoxVis : styles.btnBoxNotVis}>
                         <div className={styles.linker1}>
-                            <button className={styles.chapter}>Мужская одежда</button>
-                            <button className={styles.chapter}>Женская одежда</button>
+                            <Link to="ProductMan" className={styles.chapter}>Мужская одежда</Link>
+                            <Link to="ProductWom" className={styles.chapter}>Женская одежда</Link>
                         </div>
                         
                         <div className={styles.linker2}>

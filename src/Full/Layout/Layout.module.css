@@ -290,6 +290,11 @@
     display: block;
     margin: 30px auto;
     transition-duration: 0.3s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    text-align: center;
 }
 .chapterBack{
  margin-top: 50px; 

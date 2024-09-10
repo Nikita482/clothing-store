@@ -122,7 +122,7 @@ export default function Main(){
                         </button>
                     </Sneakers>
                 </div>
-
+                
                 <h1 className={styles.name}>Аксессуары <p id="Accessories" className={styles.nameId}></p></h1>
                 <div className={styles.boxCard}>
                     <Accessories>
