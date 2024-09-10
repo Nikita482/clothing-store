@@ -4,109 +4,109 @@ import Card from "../../card/card"
 export default function Accessories(props){
     return(
         <>
-            <Card price = ""
+            <Card price = "3 200"
                 foto = "src/assets/Accessories/itemWom1.jpg"
-                description = ""
-                name = ""
+                description = "Бусы Heartbelt – это нежный и романтичный аксессуар для вашего образа. Изящное сердце из серебра и натуральные камни создают изысканный и элегантный вид. Бусы можно носить через пояс, добавляя образу уникальности и утонченности."
+                name = "Heartbelt"
                 idNum = "73">
 
                 {props.children}
             </Card>
 
-            <Card price = "00"
+            <Card price = "1 200"
                 foto = "src/assets/Accessories/itemWom2.jpg"
-                description = ""
-                name = ""
+                description = "Бисер для беспроводных наушников Earbeads – стильный и функциональный аксессуар для вашего гаджета. Изготовлен из качественного бисера, который защищает наушники от повреждений и добавляет им индивидуальности. Яркие и разнообразные цвета позволят вам подобрать идеальный вариант под ваш стиль."
+                name = "Earbeads"
                 idNum = "74">
 
                 {props.children}
             </Card>
 
-            <Card price = "00"
+            <Card price = "1 800"
                 foto = "src/assets/Accessories/itemWom3.jpg"
-                description = ""
-                name = ""
+                description = "Брошка Brooch – изысканный аксессуар для вашего пиджака. Изготовлена из высококачественных материалов с использованием натуральных камней и серебра, эта брошка добавит вашему образу элегантности и утонченности. Оригинальный дизайн и изысканные детали делают её уникальной и запоминающейся."
+                name = "Brooch"
                 idNum = "75">
 
                 {props.children}
             </Card>
 
-            <Card price = "00"
+            <Card price = "3 500"
                 foto = "src/assets/Accessories/itemWom4.jpg"
-                description = ""
-                name = ""
+                description = "Бусы Necklace – классический аксессуар для любого случая. Изготовлены из натуральных камней и серебра, они создают изысканный и элегантный вид. Лаконичный дизайн и универсальная длина делают эти бусы идеальными для сочетания с любыми нарядами."
+                name = "Necklace"
                 idNum = "76">
 
                 {props.children}
             </Card>
 
-            <Card price = "00"
+            <Card price = "2 500"
                 foto = "src/assets/Accessories/itemWom5.jpg"
-                description = ""
-                name = ""
+                description = "Браслет Bracelet – стильный и элегантный аксессуар для вашего запястья. Изготовлен из натуральных камней и серебра, этот браслет подчеркнет вашу индивидуальность и добавит образу изысканности. Универсальный дизайн позволяет сочетать его с различными нарядами."
+                name = "Bracelet"
                 idNum = "77">
 
                 {props.children}
             </Card>
 
-            <Card price = "00"
+            <Card price = "1 800"
                 foto = "src/assets/Accessories/itemWom6.jpg"
-                description = ""
-                name = ""
+                description = "Серьги Earrings – изысканный и утонченный аксессуар для вашего образа. Изготовлены из серебра и натуральных камней, они подчеркивают вашу красоту и добавляют образу элегантности. Лаконичный дизайн и универсальные цвета делают эти серьги идеальными для любого случая."
+                name = "Earrings"
                 idNum = "78">
 
                 {props.children}
             </Card>
 
-            <Card price = "00"
+            <Card price = "3 000"
                 foto = "src/assets/Accessories/itemWom7.jpg"
-                description = ""
-                name = ""
+                description = "Кольцо Ring – изысканный и стильный аксессуар для вашего образа. Изготовлено из серебра и натуральных камней, оно подчеркивает вашу индивидуальность и добавляет образу элегантности. Лаконичный дизайн и универсальный размер делают это кольцо идеальным для любого случая."
+                name = "Ring"
                 idNum = "79">
 
                 {props.children}
             </Card>
 
-            <Card price = "00"
+            <Card price = "2 200"
                 foto = "https://i.pinimg.com/474x/79/d4/d9/79d4d949befc9f4ca45ae0b5aeaa6cf3.jpg"
-                description = ""
-                name = ""
+                description = "Цепочка Chain – классический аксессуар для любого наряда. Изготовлена из высококачественного серебра, она добавит вашему образу элегантности и изысканности. Лаконичный дизайн и универсальная длина позволяют сочетать эту цепочку с любыми украшениями."
+                name = "Chain"
                 idNum = "80">
 
                 {props.children}
             </Card>
 
-            <Card price = "00"
+            <Card price = "3 700"
                 foto = "https://i.pinimg.com/474x/f2/eb/d7/f2ebd75c4d2992bfb945c3b0fa56a6d0.jpg"
-                description = ""
-                name = ""
+                description = "Сетчатая цепочка и бусы Layered Necklace – это стильный и модный аксессуар для вашего гардероба. Сочетание нескольких цепочек и бус из натуральных камней создает многослойный и элегантный вид. Этот аксессуар идеально подходит для создания как повседневных, так и вечерних образов."
+                name = "Layered"
                 idNum = "81">
 
                 {props.children}
             </Card>
 
-            <Card price = "00"
+            <Card price = "3 500"
                 foto = "https://i.pinimg.com/474x/b0/6d/28/b06d284615311f55cc7f6de3b9af7509.jpg"
-                description = ""
-                name = ""
+                description = "Цепочка White Stone Chain – изысканный и элегантный аксессуар для вашего образа. Изготовлена из серебра и украшена белыми камнями, она добавляет образу блеска и утонченности. Лаконичный дизайн и универсальная длина делают эту цепочку идеальной для любого случая."
+                name = "Chain"
                 idNum = "82">
 
                 {props.children}
             </Card>
 
-            <Card price = "00"
+            <Card price = "2 800"
                 foto = "https://i.pinimg.com/474x/19/d7/7d/19d77d2569e55ddcf2118200b8e3101c.jpg"
-                description = ""
-                name = ""
+                description = "Украшение на шею Choker – стильный и модный аксессуар для вашего гардероба. Изготовлено из высококачественного материала, оно подчеркивает вашу индивидуальность и добавляет образу элегантности. Лаконичный дизайн и универсальный размер позволяют носить это украшение с различными нарядами."
+                name = "Choker"
                 idNum = "83">
 
                 {props.children}
             </Card>
 
-            <Card price = "00"
+            <Card price = "2 800"
                 foto = "https://i.pinimg.com/474x/86/6e/16/866e1683171a2b6c3115fd03f380ab9e.jpg"
-                description = ""
-                name = ""
+                description = "Браслет Elegant Bracelet – изысканный и стильный аксессуар для вашего запястья. Изготовлен из серебра и украшен натуральными камнями, он подчеркивает вашу индивидуальность и добавляет образу элегантности. Лаконичный дизайн и универсальный размер делают этот браслет идеальным для любого случая."
+                name = "Bracelet"
                 idNum = "84">
 
                 {props.children}
