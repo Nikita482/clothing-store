@@ -1,143 +1,102 @@
-.wrapper{
+.name{
     width: 90%;
-    height: auto;
-    margin: 30px auto 0 auto;
+    height: 50px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    padding-top: 20px;
+}
+
+.wrapperBtns{
+    width: 90%;
+    height: 50px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.wrapperMan, .wrapperWom, .wrapperManBlue, .wrapperWomPink{
+    width: 45%;
+    height: 100%;
+    border-radius: 30px;
+    font-size: 20px;
+    color: white;
+    border: none;
+}
+.wrapperWom{
+    background-color: #4B4B4B;
+}
+.wrapperWomPink{
+    background-color: #FF69B4;
+}
+.wrapperMan{
+    background-color: #4B4B4B;
+}
+.wrapperManBlue{
+    background-color: #2626B9;
 }
 
 
-.name{
-    width: 100%;
+
+.wrapperBox{
+    position: relative;
+}
+
+
+.wrapperBoxMan, .wrapperBoxManNotVis{
+    width: 90%;
+    height: auto;
+    margin: 20px auto 0 auto;
+    position: relative;
+    transition-duration: 1000ms;
+}
+.wrapperBoxManNotVis{
+    transform: scale(0.5);
+    pointer-events: none;
+    opacity: 0;
+}
+
+.arrowLeft, .arrowRight{
+    width: 50px;
     height: 50px;
+    background-color: rgb(255, 255, 255, 0.3);
+    color: black;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
     display: flex;
     justify-content: center;
     align-items: center;
-    color: white;
-}
-
-
-.btns{
-    width: 100%;
-    height: 50px;
-    display: flex;
-    justify-content: space-around;
-}
-.manBlue, .manGrey, .womPink, .womGrey{
-    width: 40%;
-    height: 100%;
-    font-size: 20px;
-    color: white;
-    border: 0;
-    border-radius: 30px;
-    transition-duration: 0.5s;
-}
-.manBlue{
-    background-color: #2626B9;
-}
-.manGrey{
-    background-color: #4B4B4B;
-}
-.womPink{
-    background-color: #FF69B4;
-}
-.womGrey{
-    background-color: #4B4B4B;
-}
-
-
-.manVis{
-    width: 100%;
-    height: auto;
-    margin: 10px auto 0 auto;
-    display: flex;
-    overflow-x: auto;
-    -webkit-overflow-scrolling: touch;
-    scroll-snap-type: x mandatory;
-    opacity: 1;              /* Блок становится полностью видимым */
-    transform: scale(1);     /* Блок возвращается к своему нормальному размеру */
-    transition: opacity 1s ease, transform 1s ease; /* Плавный переход */
-    position: relative;      /* Блок занимает своё обычное место */
-}
-.manNotVis{
-    width: 100%;
-    height: auto;
-    margin: 10px auto 0 auto;
-    display: flex;
-    overflow-x: auto;
-    -webkit-overflow-scrolling: touch;
-    scroll-snap-type: x mandatory;
-    opacity: 0;              /* Блок становится прозрачным */
-    transform: scale(0.7);  /* Блок немного уменьшается */
-    transition: opacity 1s ease, transform 1s ease; /* Плавный переход */
-    position: absolute;      /* Блок не занимает место в потоке */ 
-    pointer-events: none; /* Отключает взаимодействие с этим блоком */
-}
-
-
-.womVis{
-    width: 100%;
-    height: auto;
-    margin: 10px auto 0 auto;
-    display: flex;
-    overflow-x: auto;
-    -webkit-overflow-scrolling: touch;
-    scroll-snap-type: x mandatory;
-
-    opacity: 1;              /* Блок становится полностью видимым */
-    transform: scale(1);     /* Блок возвращается к своему нормальному размеру */
-    transition: opacity 1s ease, transform 1s ease; /* Плавный переход */
-    position: relative;      /* Блок занимает своё обычное место */
-}
-.womNotVis{
-    width: 100%;
-    height: auto;
-    margin: 10px auto 0 auto;
-    display: flex;
-    overflow-x: auto;
-    -webkit-overflow-scrolling: touch;
-    scroll-snap-type: x mandatory;
-
-    opacity: 0;              /* Блок становится прозрачным */
-    transform: scale(0);  /* Блок немного уменьшается */
-    transition: opacity 1s ease, transform 1s ease; /* Плавный переход */
-    position: absolute;      /* Блок не занимает место в потоке */ 
-    pointer-events: none; /* Отключает взаимодействие с этим блоком */
-    top: 0;
-}
-
-
-.wrapperMan, .wrapperWom{
-    position: relative;
-}
-.arrowRight, .arrowLeft{
-    width: 50px;
-    height: 50px;
-    background-image: url("https://i.pinimg.com/564x/e4/fd/af/e4fdaf86d3189073c522d510004a422e.jpg");
-    background-size: cover;
-    opacity: 0.5;
+    font-size: 30px;
     border-radius: 50%;
-    position: absolute;
-    top: 50%;
-    z-index: 1;
 }
-.arrowLeft {
-    transform: rotate(180deg);
+.arrowLeft{
     left: 10px;
-  }
-.arrowRight {
+}
+.arrowRight{
     right: 10px;
 }
 
+.wrapperDepart{
+    width: 100%;
+    height: auto;
+    display: flex;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    scroll-snap-type: x mandatory;
+}
 
-
-.manDepart1, .manDepart2, .manDepart3, .manDepart4, .manDepart5, .manDepart6, .manDepart7, .womDepart1, .womDepart2, .womDepart3, .womDepart4, .womDepart5, .womDepart6, .womDepart7{
+.manDepart1, .manDepart2, .manDepart3, .manDepart4, .manDepart5, .manDepart6, .manDepart7{
     width: 300px;
     aspect-ratio: 3 / 4;
-    margin-right: 10px;
     flex: 0 0 auto;
+    margin-right: 10px;
     scroll-snap-align: start;
-    position: relative;
     border-radius: 30px;
 }
+
 .manDepart1{
     background-image: url("/src/assets/Accessories/itemMan1.jpg");
     background-size: cover;
@@ -166,6 +125,44 @@
     background-image: url("/src/assets/Accessories/itemMan7.jpg");
     background-size: cover;
 }
+
+
+
+.wrapperBoxWom, .wrapperBoxWomNotVis{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    transition-duration: 1000ms;
+}
+.wrapperBoxWomNotVis{
+    transform: scale(0.5);
+    pointer-events: none;
+    opacity: 0;
+}
+
+.wrapperBoxWomCont{
+    width: 90%;
+    height: 100%;
+    margin: 0 auto;
+    position: relative;
+}
+
+.wrapperDepartWom{
+    display: flex;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    scroll-snap-type: x mandatory;
+}
+.womDepart1, .womDepart2, .womDepart3, .womDepart4, .womDepart5, .womDepart6, .womDepart7{
+    width: 300px;
+    aspect-ratio: 3 / 4;
+    flex: 0 0 auto;
+    margin-right: 10px;
+    scroll-snap-align: start;
+    border-radius: 30px;
+}
+
 .womDepart1{
     background-image: url("/src/assets/Accessories/itemWom1.jpg");
     background-size: cover;
@@ -199,62 +196,35 @@
 
 
 
-@media (max-width: 1400px) {
-    .manDepart1, .manDepart2, .manDepart3, .manDepart4, .manDepart5, .manDepart6, .manDepart7, .womDepart1, .womDepart2, .womDepart3, .womDepart4, .womDepart5, .womDepart6, .womDepart7{
-        width: 330px;
-    }
-}
-
-
-@media (max-width: 1150px) {
-    .manDepart1, .manDepart2, .manDepart3, .manDepart4, .manDepart5, .manDepart6, .manDepart7, .womDepart1, .womDepart2, .womDepart3, .womDepart4, .womDepart5, .womDepart6, .womDepart7{
-        width: 300px;
-    }
-}
-
-
-@media (max-width: 1050px) {
-    .manDepart1, .manDepart2, .manDepart3, .manDepart4, .manDepart5, .manDepart6, .manDepart7, .womDepart1, .womDepart2, .womDepart3, .womDepart4, .womDepart5, .womDepart6, .womDepart7{
-        width: 350px;
-    }
-}
-
-
-@media (max-width: 830px) {
-    .manDepart1, .manDepart2, .manDepart3, .manDepart4, .manDepart5, .manDepart6, .manDepart7, .womDepart1, .womDepart2, .womDepart3, .womDepart4, .womDepart5, .womDepart6, .womDepart7{
-        width: 300px;
-    }
-}
-
-
-
 @media (max-width: 768px) {
-    .wrapper{
-        width: 100%;
-    }
-}
-
-
-@media (max-width: 650px) {
-    .manDepart1, .manDepart2, .manDepart3, .manDepart4, .manDepart5, .manDepart6, .manDepart7, .womDepart1, .womDepart2, .womDepart3, .womDepart4, .womDepart5, .womDepart6, .womDepart7{
-        width: 270px;
-    }
-}
-
-
-@media (max-width: 590px) {
-    .manDepart1, .manDepart2, .manDepart3, .manDepart4, .manDepart5, .manDepart6, .manDepart7, .womDepart1, .womDepart2, .womDepart3, .womDepart4, .womDepart5, .womDepart6, .womDepart7{
-        width: 350px;
-    }
-}
-
-
-@media (max-width: 380px) {
-    .manDepart1, .manDepart2, .manDepart3, .manDepart4, .manDepart5, .manDepart6, .manDepart7, .womDepart1, .womDepart2, .womDepart3, .womDepart4, .womDepart5, .womDepart6, .womDepart7{
-        width: 100%;
-    }
-    .arrowRight, .arrowLeft{
-        width: 40px;
+    .wrapperBtns{
         height: 40px;
+    }
+}
+
+@media (max-width: 500px) {
+    .manDepart1, .manDepart2, .manDepart3, .manDepart4, .manDepart5, .manDepart6, .manDepart7, .womDepart1, .womDepart2, .womDepart3, .womDepart4, .womDepart5, .womDepart6, .womDepart7{
+        width: 250px;
+    }
+}
+
+@media (max-width: 400px) {
+    .wrapperMan, .wrapperWom, .wrapperManBlue, .wrapperWomPink{
+        width: 48%;
+    }
+}
+
+@media (max-width: 350px) {
+    .manDepart1, .manDepart2, .manDepart3, .manDepart4, .manDepart5, .manDepart6, .manDepart7, .wrapperBoxMan, .wrapperBoxManNotVis{
+        width: 100%;
+    }
+    .womDepart1, .womDepart2, .womDepart3, .womDepart4, .womDepart5, .womDepart6, .womDepart7, .wrapperBoxWomCont{
+        width: 100%;
+    }
+}
+
+@media (max-width: 270px) {
+    .wrapperMan, .wrapperWom, .wrapperManBlue, .wrapperWomPink{
+        font-size: 18px;
     }
 }

@@ -15,7 +15,10 @@ export default function Header(){
         <>
             <header>
                 <div className={styles.box}>
-                    <h1 className={styles.boxName}>GlamGarb</h1>
+                    <div>
+                        <h1 className={styles.boxName}>GlamGarb</h1>
+                        <p className={styles.boxDepartment}>Мужской отдел</p>
+                    </div>
 
                     <div className={styles.boxBtns}>
                         <Link to="/ProductWom" className={styles.boxBtnsWom}></Link>
