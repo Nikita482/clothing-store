@@ -193,8 +193,8 @@
 }
 
 
-.wrapperDepartWom, .wrapperDepart{
-    z-index: -1;
+.arrowLeft, .arrowRight{
+    z-index: 1;
 }
 
 
