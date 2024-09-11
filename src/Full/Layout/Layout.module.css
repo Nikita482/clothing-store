@@ -476,6 +476,10 @@ html {
     .helpNotVis{
         right: -120%;
     }
+    .btnBack{
+        max-height: 50px;
+        font-size: 20px;
+    }
 }
 
 
@@ -560,6 +564,7 @@ html {
         height: 50px;
     }
 }
+
 
 
 

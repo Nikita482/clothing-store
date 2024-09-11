@@ -24,7 +24,6 @@ export default function Help(props){
 
                     <div className={styles.poleMassage}>
                         <label className={styles.sms}>Сообщение:</label>
-                        <label className={styles.smsMobule}>Sms:</label>
                         <textarea className={styles.massage} placeholder="чем вам помочь?" name="Сообщение:" required></textarea>
                     </div>  
 
