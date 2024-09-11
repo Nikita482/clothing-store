@@ -132,6 +132,8 @@ export default function Main(){
                         </button>
                     </Accessories>
                 </div>
+
+                <div className={styles.margin}></div>
             </main>
         </>
     )

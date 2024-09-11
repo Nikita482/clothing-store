@@ -21,17 +21,17 @@ export default function Form(props){
 
                 <div className={styles.pole}>
                     <label className={styles.label}>Адресс:</label>
-                    <input className={styles.massage} type="text" placeholder="Адресс:" name="Адресс:" required></input>
+                    <input className={styles.massage} type="text" placeholder="Адресс достваки:" name="Адресс:" required></input>
                 </div>
 
                 <div className={styles.poleData}>
                     <label className={styles.labelData}>Дата:</label>
-                    <input className={styles.massageData} type="date" placeholder="Дата:" name="Дата:" required></input>
+                    <input className={styles.massageData} type="date" placeholder="Дата достваки:" name="Дата:" required></input>
                 </div> 
 
                 <div className={styles.poleTime}>
                     <label className={styles.labelTime}>Время:</label>
-                    <input className={styles.massage} type="time" placeholder="Время:" name="Время:" required></input>
+                    <input className={styles.massage} type="time" placeholder="Время достваки:" name="Время:" required></input>
                 </div> 
 
                 <div className={styles.linker}>

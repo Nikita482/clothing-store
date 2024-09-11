@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom"
+import { HashLink as Link } from 'react-router-hash-link';
 import styles from "./fotter.module.css"
 
 
@@ -66,7 +66,7 @@ export default function Fotter(){
                             </div>
 
                             <div className={styles.btnInfo}>
-                                <Link to="/Info" className={styles.btn}>Узнать больше</Link>
+                                <Link to="/Info#anchorInfo" className={styles.btn}>Узнать больше</Link>
                             </div>
                         </div>
                     </div>

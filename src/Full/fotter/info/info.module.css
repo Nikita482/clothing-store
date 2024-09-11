@@ -1,3 +1,11 @@
+.anchor{
+    position: absolute;
+    top: 0;
+    pointer-events: none;
+    opacity: 0;
+}
+
+
 .wrapper{
     width: 90%;
     height: auto;

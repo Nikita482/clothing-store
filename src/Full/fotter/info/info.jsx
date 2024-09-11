@@ -1,10 +1,12 @@
 import styles from "./info.module.css"
 
-import { Link } from "react-router-dom"
+import { HashLink as Link } from 'react-router-hash-link';
+
 
 export default function Info(){
     return(
         <>
+            <p id="anchorInfo" className={styles.anchor}></p>
             <div className={styles.wrapper}>
                 <div className={styles.linker4}>
                     <div className={styles.linker1}>
@@ -69,7 +71,7 @@ export default function Info(){
                         </div>
                     </div>
 
-                    <Link to="/" className={styles.back}>Назад</Link> 
+                    <Link to="/#HomePage" className={styles.back}>Назад</Link> 
                 </div>
             </div>
         </>

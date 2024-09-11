@@ -9,7 +9,7 @@
     top: 0;
     left: 50%;
     transform: translateX(-50%);
-    z-index: 1;
+    z-index: 2;
 }
 
 
@@ -279,7 +279,7 @@
 }
 
 
-.chapter, .chapterBack{
+.chapter, .chapterMan, .chapterWom, .chapterBack{
     width: 90%;
     height: 70px;
     font-size: 20px;
@@ -295,6 +295,12 @@
     align-items: center;
     text-decoration: none;
     text-align: center;
+}
+.chapterMan{
+    background-color: #2626b9;
+} 
+.chapterWom{
+    background-color: #FF69B4;
 }
 .chapterBack{
  margin-top: 50px; 
@@ -510,7 +516,7 @@ html {
 
 
 @media (max-height: 700px) {
-    .chapter{
+    .chapter, .chapterMan, .chapterWom{
         margin: 20px auto;
         height: 60px;
     }
@@ -529,7 +535,7 @@ html {
 
 
 @media (max-height: 600px) {
-    .chapter{
+    .chapter, .chapterMan, .chapterWom{
         margin: 10px auto;
     }
     .chapterBack{
@@ -539,7 +545,7 @@ html {
 
 
 @media (max-height: 530px) {
-    .chapter{
+    .chapter, .chapterMan, .chapterWom{
         height: 50px;
 
     }
@@ -589,7 +595,7 @@ html {
 
 
 @media (max-height: 300px) {
-    .chapter{
+    .chapter, .chapterMan, .chapterWom{
         margin: 3px auto;
     }
     .chapterBack{

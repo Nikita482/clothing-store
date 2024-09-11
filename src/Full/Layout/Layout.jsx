@@ -85,7 +85,6 @@ export default function Layout(){
 
     }, []);
 
-    // 1 window закрыаетс при нажатии на любую из кнопак
 
     return(
         <>
@@ -138,8 +137,8 @@ export default function Layout(){
                 <div className={styles.linker3}>
                     <div className={connectWindowuUse ? styles.btnBoxVis : styles.btnBoxNotVis}>
                         <div className={styles.linker1}>
-                            <Link to="ProductMan#NewItems" className={styles.chapter}>Мужская одежда</Link>
-                            <Link to="ProductWom#NewItems" className={styles.chapter}>Женская одежда</Link>
+                            <Link to="ProductMan#NewItems" className={styles.chapterMan}>Мужская одежда</Link>
+                            <Link to="ProductWom#NewItems" className={styles.chapterWom}>Женская одежда</Link>
                         </div>
                         
                         <div className={styles.linker2}>

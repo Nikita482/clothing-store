@@ -21,7 +21,7 @@ export default function Header(){
                     </div>
 
                     <div className={styles.boxBtns}>
-                        <Link to="/ProductWom" className={styles.boxBtnsWom}></Link>
+                        <Link to="/ProductWom#NewItems" className={styles.boxBtnsWom}></Link>
                         <Link to="/#HomePage" className={styles.boxBtnsHome}><ion-icon name="home"></ion-icon></Link>
                         <div onClick={btnWindow} className={styles.boxBtnsMenu}>☰</div>
                     </div>
@@ -37,7 +37,7 @@ export default function Header(){
                 </div>
 
                 <div className={styles.windowCon1}>
-                    <Link to="/ProductWom" className={styles.windowWom}>Женский отдел</Link>
+                    <Link to="/ProductWom#NewItems" className={styles.windowWom}>Женский отдел</Link>
                     <a href="#NewItems" onClick={btnWindow} className={styles.windowNew}>Новинки</a>
                 </div>
                

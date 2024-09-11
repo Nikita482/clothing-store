@@ -5,7 +5,7 @@ export default function Geans(props){
     return(
         <>
             <Card price = "3 200"
-                foto = "https://i.pinimg.com/474x/31/4c/73/314c73cdf4defffaacd9fcfc03e42fca.jpg"
+                foto = "https://i.pinimg.com/474x/dd/2e/a9/dd2ea98043067cb8b8740eae95928837.jpg"
                 description = "Джинсы Blaze – для тех, кто ценит стиль и комфорт. Изготовлены из высококачественного денима, они обеспечивают максимальный комфорт и долговечность. Лаконичный дизайн и нейтральные цвета делают эти джинсы универсальными для любого гардероба."
                 name = "Blaze"
                 idNum = "121">
