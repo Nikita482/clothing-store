@@ -368,6 +368,7 @@ html {
     display: flex;
     justify-content: center;
     align-items: center;
+    z-index: 2;
 }
 .helpNotVis{
     right: -85%;
